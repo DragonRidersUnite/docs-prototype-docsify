@@ -1,0 +1,25 @@
+{
+  "name": "dragonruby-docs",
+  "version": "0.1.0",
+  "description": "DragonRuby Docs",
+  "scripts": {
+    "docs": "docsify serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DragonRidersUnite/docs-prototype-docsify.git"
+  },
+  "keywords": [
+    "docs",
+    "dragonruby"
+  ],
+  "author": "DragonRuby Scribe Guild",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DragonRidersUnite/docs-prototype-docsify/issues"
+  },
+  "homepage": "https://github.com/DragonRidersUnite/docs-prototype-docsify#readme",
+  "dependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
