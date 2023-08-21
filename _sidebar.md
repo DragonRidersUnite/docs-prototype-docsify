@@ -1,2 +1,2 @@
 * [Getting Started](/docs/getting-started.md)
-* [Runtime](/docs/runtime,md)
+* [Runtime](/docs/runtime.md)
