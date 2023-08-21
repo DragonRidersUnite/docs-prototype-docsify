@@ -15,7 +15,7 @@ end
 
 || Functions |
 |:---:|---|
-| A | append_file_root, argv |
+| A | [append_file_root](/docs/runtime/append_file_root.md), argv |
 | B | benchmark |
 | C | calcspritebox, cancel_recording, cli_arguments, current_framerate |
 | D | disable_console, download_stb_rb(_raw) |
