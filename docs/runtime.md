@@ -41,7 +41,7 @@ end
 |	quit_requested?	|	Returns true if a request to quit the Application was made.	|
 |	request_quit	|	Makes a request for DragonRuby to clean up the Application process and quit to the operating system.	|
 
-## Mouse
+### Mouse
 
 | Functions | Description |
 |---|---|
