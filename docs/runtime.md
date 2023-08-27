@@ -16,7 +16,7 @@ end
 
 | Function | Description |
 | --- | --- |			
-|	[argv](runtime/argv.md)	|	Returns a String of the command line parameters.	|
+|	[argv](./runtime/argv.md)	|	Returns a String of the command line parameters.	|
 |	[cli_arguments](runtime/cli_arguments.md)	|	Returns a Hash of the command line parameters.	|
 |	[quit_requested?](runtime/quit_requested.md)	|	Returns true if a request to quit the Application was made.	|
 |	[request_quit](runtime/request_quit.md)	|	Makes a request for DragonRuby to clean up the Application process and quit to the operating system.	|
