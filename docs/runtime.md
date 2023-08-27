@@ -65,7 +65,7 @@ end
 | Function | Description |
 | --- | --- |		
 |	[append_file](runtime/append_file.md)	|	Adds content to the end of an existing file.	|
-|	[append_file_root](runtime/append_file_root.md)	|	Adds content to the end of an existing file even outside the sandbox.	|
+|	[append_file_root](/runtime/append_file_root.md)	|	Adds content to the end of an existing file even outside the sandbox.	|
 |	[delete_file](runtime/delete_file.md)	|	Removes a file from the OS file system.	|
 |	[delete_file_if_exist](runtime/delete_file_if_exist.md)	|	Removes a file from the OS file system.	|
 |	[get_base_dir](runtime/get_base_dir.md)	|	Returns the location of the DragonRuby binary.	|
