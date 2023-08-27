@@ -12,7 +12,7 @@ end
 ```
 ## Functions
 
-	### Application
+### Application
 
 | Function | Description |
 | --- | --- |			
@@ -21,7 +21,7 @@ end
 |	[quit_requested?](runtime/quit_requested.md)	|	Returns true if a request to quit the Application was made.	|
 |	[request_quit](runtime/request_quit.md)	|	Makes a request for DragonRuby to clean up the Application process and quit to the operating system.	|
 				
-	### Debugging & Development	
+### Debugging & Development	
 
 | Function | Description |
 | --- | --- |		
@@ -50,7 +50,7 @@ end
 |	[version_pro?](runtime/version_pro.md)	|	Returns True if DragonRuby can use non-Standard features.	|
 |	[warn_array_primitives!](runtime/warn_array_primitives.md)	|	Logs warnings when array-based primitives are being used in your code.	|
 				
-	### Dragon Replay	
+### Dragon Replay	
 
 | Function | Description |
 | --- | --- |		
@@ -60,7 +60,7 @@ end
 |	[stop_recording](runtime/stop_recording.md)	|	Stops gameplay recording and writes the current session to a file.	|
 |	[stop_replay](runtime/stop_replay.md)	|	Stops a currently executing replay.	|
 				
-	### File IO	
+### File IO	
 
 | Function | Description |
 | --- | --- |		
@@ -77,14 +77,14 @@ end
 |	[write_file](runtime/write_file.md)	|	Creates/Overwrites a given file with the supplied contents.	|
 |	[write_file_root](runtime/write_file_root.md)	|	Creates/Overwrites a given file with the supplied contents even outside the sandbox.	|
 				
-	### Indie & Pro Features	
+### Indie & Pro Features	
 
 | Function | Description |
 | --- | --- |		
 |	[get_pixels](runtime/get_pixels.md)	|	Loads a sprite file as a 1D-array of color values.	|
 |	[dlopen](runtime/dlopen.md)	|	Loads a Dynamic Library.  Uses C-Extension feature.	|
 				
-	### JSON & XML Data		
+### JSON & XML Data		
 
 | Function | Description |
 | --- | --- |	
@@ -93,7 +93,7 @@ end
 |	[parse_xml](runtime/parse_xml.md)	|	Converts XML data from a String into a Hash.	|
 |	[parse_xml_file](runtime/parse_xml_file.md)	|	Converts XML data from a File into a Hash.	|
 				
-	### Mouse			
+### Mouse			
 
 | Function | Description |
 | --- | --- |
@@ -104,7 +104,7 @@ end
 |	[set_system_cursor](runtime/set_system_cursor.md)	|	Changes the appearance of the Mouse Cursor using system cursors.	|
 |	[show_cursor](runtime/show_cursor.md)	|	Turns the Mouse Cursor visible.	|
 				
-	### Network IO		
+### Network IO		
 
 | Function | Description |
 | --- | --- |	
@@ -113,7 +113,7 @@ end
 |	[http_post_body](runtime/http_post_body.md)	|	Asynchronously, returns an object representing the HTTP response to a POST request.	|
 |	[start_server!](runtime/start_server!.md)	|	Opens a networking port for listening as a server.	|
 				
-	### Operating System	
+### Operating System	
 
 | Function | Description |
 | --- | --- |		
@@ -123,13 +123,13 @@ end
 |	[platform?](runtime/platform.md)	|	The OS platform that DragonRuby is currently running on.	|
 |	[system](runtime/system.md)	|	Executes a OS shell command and returns result to the console.	|
 				
-	### String			
+### String			
 
 | Function | Description |
 | --- | --- |
 |	[calcstringbox](runtime/calcstringbox.md)	|	Returns the pixel dimensions of a String should it be rendered in a font.	|
 				
-	### Window			
+### Window			
 
 | Function | Description |
 | --- | --- |
