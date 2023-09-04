@@ -7,51 +7,51 @@ DragonRuby supports a subset of MRI apis. Our target is to support all of mRuby'
 ### Classes
 | Name | Inherits | Modules | Description |
 |---|---|---|---|
-|	[StandardError](ruby/standarderror.md)	|		|		|
-|	[Object](ruby/object.md)	|	[Enumerable](ruby/enumerable.md)	|		|
-|	[IOError](ruby/ioerror.md)	|		|	Thrown when attempting to read past the end of a file.	|
-|	[Object](ruby/object.md)	|		|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[IO](ruby/io.md)	|	Constants	|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[Integer](ruby/integer.md)	|		|		|
-|	[Numeric](ruby/numeric.md)	|		|		|
-|	[RangeError](ruby/rangeerror.md)	|		|		|
-|	[RuntimeError](ruby/runtimeerror.md)	|		|		|
-|	[Object](ruby/object.md)	|	[Enumerable](ruby/enumerable.md)	|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[StandardError](ruby/standarderror.md)	|		|		|
-|	[StandardError](ruby/standarderror.md)	|		|		|
-|	[Numeric](ruby/numeric.md)	|		|		|
-|	[IndexError](ruby/indexerror.md)	|		|		|
-|	[ScriptError](ruby/scripterror.md)	|		|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[StandardError](ruby/standarderror.md)	|		|		|
-|	[Object](ruby/object.md)	|	[NilClassFalseClass](ruby/nilclassfalseclass.md)	|		|
-|	[Exception](ruby/exception.md)	|		|		|
-|	[NameError](ruby/nameerror.md)	|		|		|
-|	[ScriptError](ruby/scripterror.md)	|		|		|
-|	[Object](ruby/object.md)	|	[Comparable](ruby/comparable.md), [ValueType](ruby/valuetype.md)	|		|
-|	[](ruby/.md)	|		|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[Object](ruby/object.md)	|	[Enumerable](ruby/enumerable.md)	|		|
-|	[StandardError](ruby/standarderror.md)	|		|		|
-|	[StandardError](ruby/standarderror.md)	|		|		|
-|	[Exception](ruby/exception.md)	|		|		|
-|	[Exception](ruby/exception.md)	|		|		|
-|	[IndexError](ruby/indexerror.md)	|		|		|
-|	[Object](ruby/object.md)	|	[Comparable](ruby/comparable.md), [ValueType](ruby/valuetype.md)	|		|
-|	[Object](ruby/object.md)	|		|		|
-|	[Object](ruby/object.md)	|	[Comparable](ruby/comparable.md), [ValueType](ruby/valuetype.md)	|		|
-|	[Exception](ruby/exception.md)	|		|		|
-|	[Object](ruby/object.md)	|	[Comparable](ruby/comparable.md)	|		|
-|	[Object](ruby/object.md)	|	[ValueType](ruby/valuetype.md)	|		|
-|	[StandardError](ruby/standarderror.md)	|		|		|
-|	[Object](ruby/object.md)	|		|		|
+|	[ArgumentError](ruby/argumenterror.md)	|	[StandardError](ruby/standarderror.md)	|		|		|
+|	[Array](ruby/array.md)	|	[Object](ruby/object.md)	|	[Enumerable](ruby/enumerable.md)	|		|
+|	[EOFError](ruby/eoferror.md)	|	[IOError](ruby/ioerror.md)	|		|	Thrown when attempting to read past the end of a file.	|
+|	[Enumerator](ruby/enumerator.md)	|	[Object](ruby/object.md)	|		|		|
+|	[Exception](ruby/exception.md)	|	[Object](ruby/object.md)	|		|		|
+|	[FalseClass](ruby/falseclass.md)	|	[Object](ruby/object.md)	|		|		|
+|	[Fiber](ruby/fiber.md)	|	[Object](ruby/object.md)	|		|		|
+|	[File](ruby/file.md)	|	[IO](ruby/io.md)	|	Constants	|		|
+|	[FileTest](ruby/filetest.md)	|	[Object](ruby/object.md)	|		|		|
+|	[Fixnum](ruby/fixnum.md)	|	[Integer](ruby/integer.md)	|		|		|
+|	[Float](ruby/float.md)	|	[Numeric](ruby/numeric.md)	|		|		|
+|	[FloatDomainError](ruby/floatdomainerror.md)	|	[RangeError](ruby/rangeerror.md)	|		|		|
+|	[FrozenError](ruby/frozenerror.md)	|	[RuntimeError](ruby/runtimeerror.md)	|		|		|
+|	[Hash](ruby/hash.md)	|	[Object](ruby/object.md)	|	[Enumerable](ruby/enumerable.md)	|		|
+|	[IO](ruby/io.md)	|	[Object](ruby/object.md)	|		|		|
+|	[IOError](ruby/ioerror.md)	|	[StandardError](ruby/standarderror.md)	|		|		|
+|	[IndexError](ruby/indexerror.md)	|	[StandardError](ruby/standarderror.md)	|		|		|
+|	[Integer](ruby/integer.md)	|	[Numeric](ruby/numeric.md)	|		|		|
+|	[KeyError](ruby/keyerror.md)	|	[IndexError](ruby/indexerror.md)	|		|		|
+|	[LocalJumpError](ruby/localjumperror.md)	|	[ScriptError](ruby/scripterror.md)	|		|		|
+|	[Method](ruby/method.md)	|	[Object](ruby/object.md)	|		|		|
+|	[Module](ruby/module.md)	|	[Object](ruby/object.md)	|		|		|
+|	[NameError](ruby/nameerror.md)	|	[StandardError](ruby/standarderror.md)	|		|		|
+|	[NilClass](ruby/nilclass.md)	|	[Object](ruby/object.md)	|	[NilClassFalseClass](ruby/nilclassfalseclass.md)	|		|
+|	[NoMemoryError](ruby/nomemoryerror.md)	|	[Exception](ruby/exception.md)	|		|		|
+|	[NoMethodError](ruby/nomethoderror.md)	|	[NameError](ruby/nameerror.md)	|		|		|
+|	[NotImplementedError](ruby/notimplementederror.md)	|	[ScriptError](ruby/scripterror.md)	|		|		|
+|	[Numeric](ruby/numeric.md)	|	[Object](ruby/object.md)	|	[Comparable](ruby/comparable.md), [ValueType](ruby/valuetype.md)	|		|
+|	[Object](ruby/object.md)	|	[](ruby/.md)	|		|		|
+|	[Proc](ruby/proc.md)	|	[Object](ruby/object.md)	|		|		|
+|	[Random](ruby/random.md)	|	[Object](ruby/object.md)	|		|		|
+|	[Range](ruby/range.md)	|	[Object](ruby/object.md)	|	[Enumerable](ruby/enumerable.md)	|		|
+|	[RangeError](ruby/rangeerror.md)	|	[StandardError](ruby/standarderror.md)	|		|		|
+|	[RegexpError](ruby/regexperror.md)	|	[StandardError](ruby/standarderror.md)	|		|		|
+|	[ScriptError](ruby/scripterror.md)	|	[Exception](ruby/exception.md)	|		|		|
+|	[StandardError](ruby/standarderror.md)	|	[Exception](ruby/exception.md)	|		|		|
+|	[StopIterationError](ruby/stopiterationerror.md)	|	[IndexError](ruby/indexerror.md)	|		|		|
+|	[String](ruby/string.md)	|	[Object](ruby/object.md)	|	[Comparable](ruby/comparable.md), [ValueType](ruby/valuetype.md)	|		|
+|	[Struct](ruby/struct.md)	|	[Object](ruby/object.md)	|		|		|
+|	[Symbol](ruby/symbol.md)	|	[Object](ruby/object.md)	|	[Comparable](ruby/comparable.md), [ValueType](ruby/valuetype.md)	|		|
+|	[SystemStackError](ruby/systemstackerror.md)	|	[Exception](ruby/exception.md)	|		|		|
+|	[Time](ruby/time.md)	|	[Object](ruby/object.md)	|	[Comparable](ruby/comparable.md)	|		|
+|	[TrueClass](ruby/trueclass.md)	|	[Object](ruby/object.md)	|	[ValueType](ruby/valuetype.md)	|		|
+|	[TypeError](ruby/typeerror.md)	|	[StandardError](ruby/standarderror.md)	|		|		|
+|	[UnboundMethod](ruby/unboundmethod.md)	|	[Object](ruby/object.md)	|		|		|
 
 
 
