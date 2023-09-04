@@ -1,13 +1,5 @@
-# ArgumentError < [StandardError](standarderror.md)
+# class ArgumentError
 
-```mermaid
-classDiagram
-StandardError<|--ArgumentError
-class StandardError {
-  +exception()
-}
-class ArgumentError {
-  +exception()
-}
-```
-
+| | |
+|---|---|
+| Ancestors:| [StandardError](standarderror.md) < [Exception](exception.md) < [Object](object.md) |
