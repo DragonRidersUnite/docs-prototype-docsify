@@ -1,4 +1,5 @@
-* [Getting Started](/docs/getting-started.md)
+ * Guides & Tutorials
+  * [Getting Started](/docs/guides/getting-started.md)
 * API
-  * Ruby
-  * [Runtime](/docs/runtime.md)
+  * [Ruby](/docs/API/ruby.md)
+  * [Runtime](/docs/API/runtime.md)
