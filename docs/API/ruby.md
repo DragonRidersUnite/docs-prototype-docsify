@@ -62,7 +62,7 @@ DragonRuby supports a subset of MRI apis. Our target is to support all of mRuby'
 |	[Comparable](ruby/comparable.md)	|		|
 |	[Enumerable](ruby/enumerable.md)	|		|
 |	[Kernel](ruby/kernel.md)	|		|
-|	[Math](ruby/math.md)	|		|
+|	[Math](ruby/math.md)	|	Basic trigonometric and transcendental functions as well as common constants such as PI.	|
 |	[NilClassFalseClass](ruby/nilclassfalseclass.md)	|		|
 |	[ValueType](ruby/valuetype.md)	|		|
 
