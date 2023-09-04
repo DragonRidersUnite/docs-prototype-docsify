@@ -1,2 +1,4 @@
 * [Getting Started](/docs/getting-started.md)
-* [Runtime](/docs/runtime.md)
+* API
+  * Ruby
+  * [Runtime](/docs/runtime.md)
