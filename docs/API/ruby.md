@@ -81,8 +81,51 @@ ScriptError<|--LocalJumpError
 ScriptError<|--NotImplementedError
 
 
-
 class Hash {
 ~Enumerable
+}
+
+class Array {
+~Enumerable
+}
+
+class Enumerator {
+~Enumerable
+}
+
+class Chain {
+~Enumerable
+}
+
+class Generator {
+~Enumerable
+}
+class Range {
+~Enumerable
+}
+
+class File {
+~Constants
+}
+
+class Socket {
+~Constants
+~Option
+}
+
+class Integer {
+~Integral
+}
+
+class Numeric {
+~Comparable
+}
+
+class String {
+~Comparable
+}
+
+class Symbol {
+~Comparable
 }
 ```
