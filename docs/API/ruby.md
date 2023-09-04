@@ -7,3 +7,9 @@
 | Name | Description |
 |---|---|
 | Enumerable | |
+
+# Inheritance Diagram
+```mermaid
+classDiagram
+  Object<|--Hash
+```
