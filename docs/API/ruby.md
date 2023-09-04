@@ -30,6 +30,13 @@ Object<|--Numeric
 Object<|--Proc
 Object<|--Random
 Object<|--Range
+Object<|--String
+Object<|--Struct
+Object<|--Symbol
+Object<|--Time
+Object<|--TrueClass
+Object<|--UnboundMethod
+
 
 Enumerator<|--Lazy
 
@@ -37,6 +44,12 @@ IO<|--BasicSocket
 IO<|--File
 BasicSocket<|--IPSocket
 BasicSocket<|--Socket
+BasicSocket<|--UNIXSocket
+UNIXSocket<|--UNIXServer
+IPSocket<|--TCPSocket
+IPSocket<|--UDPSocket
+TCPSocket<|--TCPServer
+
 
 Integer<|--Fixnum
 Numeric<|--Complex
@@ -46,6 +59,9 @@ Numeric<|--Rational
 
 Exception<|--NoMemoryError
 Exception<|--ScriptError
+Exception<|--StandardError
+Exception<|--SystemStackError
+
 
 IOError<|--EOFError
 StandardError<|--ArgumentError
@@ -54,8 +70,11 @@ StandardError<|--IndexError
 StandardError<|--NameError
 StandardError<|--RangeError
 StandardError<|--RegexpError
+StandardError<|--SocketError
+StandardError<|--TypeError
 NameError<|--NoMethodError
 IndexError<|--KeyError
+IndexError<|--StopIteration
 RangeError<|--FloatDomainError
 RuntimeError<|--FrozenError
 ScriptError<|--LocalJumpError
