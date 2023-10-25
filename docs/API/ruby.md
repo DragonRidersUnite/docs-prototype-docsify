@@ -7,7 +7,7 @@ DragonRuby supports a subset of MRI apis. Our target is to support all of mRuby'
 ### Classes
 | Name | Inherits | Modules | Description |
 |---|---|---|---|
-|	[Array](ruby/array.md)	|	[Object](ruby/object.md)	|	[Enumerable](ruby/enumerable.md)	|	An Array is an ordered, integer-indexed collection of objects, called elements. Any object may be an array element (even another array), and an array can contain objects of different types. |
+|	[Array](ruby/array.md)	|	[Object](ruby/object.md)	|	[Enumerable](ruby/enumerable.md)	|	An ordered, integer-indexed collection of objects. |
 |	[Enumerator](ruby/enumerator.md)	|	[Object](ruby/object.md)	|		|		|
 |	[FalseClass](ruby/falseclass.md)	|	[Object](ruby/object.md)	|		|		|
 |	[Fiber](ruby/fiber.md)	|	[Object](ruby/object.md)	|		|		|
