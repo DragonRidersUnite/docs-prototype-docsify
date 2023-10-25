@@ -18,7 +18,7 @@ The Array class has been extended to provide methods that will help in common ga
 | new | array | Returns a new array formed from the array parameter |
 | new | size | Returns a new array with size elements containing nil |
 | new | size, default | Returns a new array with size elements each containing the default value |
-| new | size {|index| } | Returns a new array with size elements each containing the return value of the block function | 
+| new | size {\|index\| } | Returns a new array with size elements each containing the return value of the block function | 
 | try_convert | object | Returns an array created from object. Returns nil or throws an exception, if it fails. |
 
 ## Operator Methods
