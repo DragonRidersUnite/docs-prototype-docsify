@@ -9,21 +9,21 @@
 
 | Method | Parameters | Description |
 | --- | --- | --- |
-| __caller_to_org__ |  |  |
-| __caller_without_noise__ |  |  |
-| __custom_object_methods__ |  |  |
-| __gtk_ruby_source_files__ |  |  |
-| __gtk_ruby_string_contains_source_file_path__? |  |  |
-| __help_contract_implementation |  |  |
-| __help_contract_implementation__ |  |  |
-| __looks_like_docs__? |  |  |
-| __normalized_docs_method__ |  |  |
-| __object_methods__ |  |  |
-| __pretty_format_exception_text_recommend_reset_next_tick__ |  |  |
-| __pretty_format_exception_text_uninitialized_constant__ |  |  |
-| __pretty_print_exception__ |  |  |
-| __supports_ivars__? |  |  |
-| __try_invoke_docs_method__ |  |  |
+| \_\_caller_to_org__ |  |  |
+| \_\_caller_without_noise__ |  |  |
+| \_\_custom_object_methods__ |  |  |
+| \_\_gtk_ruby_source_files__ |  |  |
+| \_\_gtk_ruby_string_contains_source_file_path__? |  |  |
+| \_\_help_contract_implementation |  |  |
+| \_\_help_contract_implementation__ |  |  |
+| \_\_looks_like_docs__? |  |  |
+| \_\_normalized_docs_method__ |  |  |
+| \_\_object_methods__ |  |  |
+| \_\_pretty_format_exception_text_recommend_reset_next_tick__ |  |  |
+| \_\_pretty_format_exception_text_uninitialized_constant__ |  |  |
+| \_\_pretty_print_exception__ |  |  |
+| \_\_supports_ivars__? |  |  |
+| \_\_try_invoke_docs_method__ |  |  |
 | and |  |  |
 | associate |  |  |
 | attr_gtk |  |  |
