@@ -6,7 +6,7 @@
 
 Raised when the arguments are wrong and there isn’t a more specific [Exception](execption.md) class.
 
-## Example 1: Passing the wrong number of arguments
+### Example 1: Passing the wrong number of arguments
 
 The following code:
 
@@ -21,13 +21,15 @@ will trigger this exception:
 ```
 
 
-## Example 2: Passing an argument that is not acceptable
+### Example 2: Passing an invalid argument
+
+The negative number being passed to the first() method:
 
 ```ruby
  [1, 2, 3].first(-4)
 ```
 
-the negative number being an invalid argument will trigger this response:
+ will trigger this response:
 
 ```
  ArgumentError: negative array size
