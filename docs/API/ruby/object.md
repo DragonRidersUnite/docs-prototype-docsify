@@ -1,0 +1,104 @@
+# Object
+|  |  |  |
+| --- | --- | --- |
+| Ancestor | BasicObject |
+| Modules | [Kernel] |
+
+
+## Instance Methods
+
+| Method | Parameters | Description |
+| --- | --- | --- |
+| __caller_to_org__ |  |  |
+| __caller_without_noise__ |  |  |
+| __custom_object_methods__ |  |  |
+| __gtk_ruby_source_files__ |  |  |
+| __gtk_ruby_string_contains_source_file_path__? |  |  |
+| __help_contract_implementation |  |  |
+| __help_contract_implementation__ |  |  |
+| __looks_like_docs__? |  |  |
+| __normalized_docs_method__ |  |  |
+| __object_methods__ |  |  |
+| __pretty_format_exception_text_recommend_reset_next_tick__ |  |  |
+| __pretty_format_exception_text_uninitialized_constant__ |  |  |
+| __pretty_print_exception__ |  |  |
+| __supports_ivars__? |  |  |
+| __try_invoke_docs_method__ |  |  |
+| and |  |  |
+| associate |  |  |
+| attr_gtk |  |  |
+| attr_label |  |  |
+| attr_line |  |  |
+| attr_rect |  |  |
+| attr_sprite |  |  |
+| autocomplete_methods |  |  |
+| better_class_hierarchy_information |  |  |
+| better_instance_information |  |  |
+| comment |  |  |
+| docs |  |  |
+| f_or_default |  |  |
+| fast_rand |  |  |
+| fn |  |  |
+| help |  |  |
+| hmap |  |  |
+| i_or_default |  |  |
+| id |  |  |
+| inspect |  |  |
+| into |  |  |
+| ivar |  |  |
+| ivar! |  |  |
+| let |  |  |
+| log |  |  |
+| log_black |  |  |
+| log_blue |  |  |
+| log_bright_black |  |  |
+| log_bright_blue |  |  |
+| log_bright_cyan |  |  |
+| log_bright_green |  |  |
+| log_bright_magenta |  |  |
+| log_bright_red |  |  |
+| log_bright_white |  |  |
+| log_bright_yellow |  |  |
+| log_cyan |  |  |
+| log_debug |  |  |
+| log_error |  |  |
+| log_green |  |  |
+| log_important |  |  |
+| log_info |  |  |
+| log_magenta |  |  |
+| log_once |  |  |
+| log_once_important |  |  |
+| log_once_info |  |  |
+| log_print |  |  |
+| log_red |  |  |
+| log_reset_color |  |  |
+| log_spam |  |  |
+| log_unfiltered |  |  |
+| log_warn |  |  |
+| log_white |  |  |
+| log_with_color |  |  |
+| log_yellow |  |  |
+| metadata_object_id |  |  |
+| method_missing |  |  |
+| method_missing_core |  |  |
+| numeric_or_default |  |  |
+| or |  |  |
+| pretty_format |  |  |
+| pretty_print |  |  |
+| primitive_marker |  |  |
+| purge_class |  |  |
+| raise_error_with_kind_of_okay_message |  |  |
+| raise_immediately |  |  |
+| raise_method_missing_better_error |  |  |
+| raise_with_caller |  |  |
+| repl |  |  |
+| repl_silent |  |  |
+| require |  |  |
+| require_relative |  |  |
+| s_or_default |  |  |
+| serialize |  |  |
+| tick |  |  |
+| to_s |  |  |
+| to_sf |  |  |
+| trace! |  |  |
+| xrepl |  |  |
