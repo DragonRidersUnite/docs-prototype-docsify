@@ -13,7 +13,7 @@ The Array class has been extended to provide methods that will help in common ga
 
 | Method | Parameters | Description |
 | --- | --- | --- |
-| [] | *args | Returns a new array populated with the given objects (args) |
+| \[\] | *args | Returns a new array populated with the given objects (args) |
 | new | | Returns a new empty array |
 | new | array | Returns a new array formed from the array parameter |
 | new | size | Returns a new array with size elements containing nil |
@@ -32,3 +32,116 @@ The Array class has been extended to provide methods that will help in common ga
 | << | object | Appends object to the array |
 | <=> | other_array | Returns -1, 0, or 1 as self is less than, equal to, or greater than other_array.  |
 | == | other_array | Returns true if the size and elements of both arrays are equal. |
+
+
+## Instance Methods
+
+| Method | Parameters | Description |
+| --- | --- | --- |
+| \[\] | index | Returns the element at offset index |
+| \[index\]= | object | Assigns object to the array at offset index |
+| any_intersect_rect? |  |  |
+| append |  |  |
+| assoc |  |  |
+| at |  |  |
+| bsearch |  |  |
+| bsearch_index |  |  |
+| clear |  |  |
+| collect! |  |  |
+| combination |  |  |
+| compact |  |  |
+| compact! |  |  |
+| concat |  |  |
+| copy |  |  |
+| delete |  |  |
+| delete_at |  |  |
+| delete_if |  |  |
+| difference |  |  |
+| dig |  |  |
+| each |  |  |
+| each_index |  |  |
+| empty? |  |  |
+| eql? |  |  |
+| fetch |  |  |
+| fill |  |  |
+| filter! |  |  |
+| first |  |  |
+| flatten |  |  |
+| flatten! |  |  |
+| include_any? |  |  |
+| index |  |  |
+| initialize |  |  |
+| initialize_copy |  |  |
+| insert |  |  |
+| inspect |  |  |
+| intersection |  |  |
+| join |  |  |
+| keep_if |  |  |
+| last |  |  |
+| length |  |  |
+| map |  |  |
+| map! |  |  |
+| map_2d |  |  |
+| map_with_index |  |  |
+| pack |  |  |
+| pairs_to_hash |  |  |
+| permutation |  |  |
+| pop |  |  |
+| prepend |  |  |
+| product |  |  |
+| push |  |  |
+| rassoc |  |  |
+| reject |  |  |
+| reject! |  |  |
+| reject_false |  |  |
+| reject_falsey |  |  |
+| reject_nil |  |  |
+| replace |  |  |
+| rest |  |  |
+| reverse |  |  |
+| reverse! |  |  |
+| reverse_each |  |  |
+| rindex |  |  |
+| rotate |  |  |
+| rotate! |  |  |
+| sample |  |  |
+| second |  |  |
+| select! |  |  |
+| serialize |  |  |
+| shift |  |  |
+| shuffle |  |  |
+| shuffle! |  |  |
+| size |  |  |
+| slice |  |  |
+| slice! |  |  |
+| sort |  |  |
+| sort! |  |  |
+| third |  |  |
+| to_a |  |  |
+| to_a_pairs |  |  |
+| to_h |  |  |
+| to_s |  |  |
+| transpose |  |  |
+| union |  |  |
+| uniq |  |  |
+| uniq! |  |  |
+| unshift |  |  |
+| value |  |  |
+| values_at |  |  |
+
+
+## Undocumented
+
+| Method | Parameters | Description |
+| --- | --- | --- |
+| \_\_ary_cmp |  |  |
+| \_\_ary_eq |  |  |
+| \_\_ary_index |  |  |
+| \_\_original_add\_\_ |  |  |
+| \_\_original_map\_\_ |  |  |
+| \_\_original_reject\_\_ |  |  |
+| \_\_svalue |  |  |
+| \_inspect |  |  |
+| a_each |  |  |
+| a_map |  |  |
+
