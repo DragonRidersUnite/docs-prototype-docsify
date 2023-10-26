@@ -4,7 +4,7 @@
 |---|---|
 | Ancestors:| [StandardError](standarderror.md) < [Exception](exception.md) < [Object](object.md) |
 
-Raised when the arguments are wrong and there isn’t a more specific [Exception](execption.md) class.
+Raised when the arguments are wrong and there isn’t a more specific [Exception](exception.md) class.
 
 ### Example 1: Passing the wrong number of arguments
 
