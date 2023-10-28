@@ -62,10 +62,10 @@ end
 
 The sprite path of sprites/player.png will be replaced according to the following naming conventions (fallback to a lower resolution is automatically handled if a sprite with naming convention isn't found):
 
-* 720p: sprites/player.png (100x100)
-* HD+: sprites/player@125.png (125x125)
-* 1080p: sprites/player@150.png (150x150)
-* 1440p: sprites/player@200.png (200x200)
-* 1880p: sprites/player@250.png (250x250)
-* 4k: sprites/player@300.png (300x300)
-* 5k: sprites/player@400.png (400x400)
+* 720p: `sprites/player.png` (100x100)
+* HD+: `sprites/player@125.png` (125x125)
+* 1080p: `sprites/player@150.png` (150x150)
+* 1440p: `sprites/player@200.png` (200x200)
+* 1880p: `sprites/player@250.png` (250x250)
+* 4k: `sprites/player@300.png` (300x300)
+* 5k: `sprites/player@400.png` (400x400)
