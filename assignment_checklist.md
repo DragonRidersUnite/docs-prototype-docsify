@@ -75,4 +75,4 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	set_window_fullscreen	|	runtime/set_window_fullscreen.md	|		|		|		|
 |	set_window_scale	|	runtime/set_window_scale.md	|		|		|		|
 |	window_fullscreen?	|	runtime/window_fullscreen?.md	|		|		|		|
-![image](https://github.com/DragonRidersUnite/docs-prototype-docsify/assets/4784891/c5abe3a9-1808-4779-b6fd-71f3678b2d42)
+
