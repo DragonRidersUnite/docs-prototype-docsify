@@ -9,7 +9,10 @@ This function will give you a float value between 0 and 1 that represents a perc
 
 This [YouTube video](https://www.youtube.com/watch?v=mr5xkf6zSzk) is a fantastic introduction to easing functions.
 
-### Examples
+<br>
+
+**Examples**
+
 This example shows how to fade in a label at frame 60 over two seconds (120 ticks). The `:identity` definition implies a linear fade: `f(x) -> x`.
 
 ```ruby
@@ -43,6 +46,8 @@ def tick args
 end
 ```
 
+<br>
+
 ## Easing Definitions
 
 There are a number of easing definitions availble to you:
@@ -63,7 +68,8 @@ These are the power easing definitions. `:quad` is `f(x) = x * x (x squared)`, `
 
 The power easing definitions represent Smooth Start easing (the percentage changes slow at first and speeds up at the end).
 
-### Example
+**Example**
+
 Here is an example of Smooth Start (the percentage changes slow at first and speeds up at the end)
 
 ```ruby
@@ -96,7 +102,7 @@ end
 
 The base easing definitions can be combined to create common easing functions.
 
-### Example
+**Example**
 
 Here is an example of Smooth Stop (the percentage changes fast at first and slows down at the end).
 
@@ -132,7 +138,7 @@ end
 
 You can define your own easing functions by passing in a lambda as a definition or extending the Easing module.
 
-### Example - Using Lambdas
+**Example - Using Lambdas**
 
 This easing function goes from 0 to 1 for the first half of the ease, then 1 to 0 for the second half of the ease.
 
@@ -165,7 +171,7 @@ def tick args
 end
 ```
 
-### Example - Extending Easing Definitions
+**Example - Extending Easing Definitions**
 
 If you don't want to create a lambda, you can register an easing definition like so:
 
