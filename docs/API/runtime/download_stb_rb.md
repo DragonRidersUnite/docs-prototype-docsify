@@ -1,11 +1,11 @@
 # download_stb_rb(URL), download_stb_rb(github_user, repository, file)
 
-| Parameter | Class |
+| Parameter | Class | Parameter | Class |
 | --- | --- |
-| URL | String |
-| github_user | String |
-| repository | String |
-| file | String |
+| URL | String | github_user | String |
+|  |  |  repository | String |
+| | | file | String |
+
 
 `download_stb_rb` downloads a single file from a github repository to your project folder.  This function can have two forms.  If the first argument is a URL of a specific Github file, the other parameters can be omitted.  
 Otherwise, if all three parameters are provided, the first parameter must be a github user name, then a repository name and finally a file path.  
