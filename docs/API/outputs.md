@@ -42,7 +42,7 @@ def tick args
 end
 ```
 
-### An Array with colors and alpha
+### Using an Array with colors and alpha
 
 The value for the color and alpha is a number between 0 and 255. The alpha property is optional and will be set to 255 if not specified.
 
@@ -150,7 +150,7 @@ def tick args
 end
 ```
 
-### An Array with colors and alpha
+### Using an Array with colors and alpha
 
 The value for the color and alpha is a number between 0 and 255. The alpha property is optional and will be set to 255 if not specified.
 
