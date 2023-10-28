@@ -44,7 +44,7 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	delete_file_if_exist	|	runtime/delete_file_if_exist.md	|		|		|		|
 |	get_base_dir	|	runtime/get_base_dir.md	|		|		|		|
 |	get_game_dir	|	runtime/get_game_dir.md	|		|		|		|
-|	get_game_dir_url	|	runtime/get_game_dir_url.md	|		|		|		|
+|	get_game_dir_url	|	runtime/get_game_dir_url.md	|	dcrawl	|	X	|		|
 |	list_files	|	runtime/list_files.md	|		|		|		|
 |	read_file	|	runtime/read_file.md	|		|		|		|
 |	stat_file	|	runtime/stat_file.md	|		|		|		|
