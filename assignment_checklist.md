@@ -8,7 +8,7 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	argv	|	runtime/argv.md	|	dcrawl	| X		|		|
 |	cli_arguments	|	runtime/cli_arguments.md	|	dcrawl	|	X	|		|
 |	quit_requested?	|	runtime/quit_requested?.md	|	dcrawl	|	X	|		|
-|	request_quit	|	runtime/request_quit.md	|	drawl	|		|		|
+|	request_quit	|	runtime/request_quit.md	|	dcrawl	|	X	|		|
 |	benchmark	|	runtime/benchmark.md	|		|		|		|
 |	production?	|	runtime/production?.md	|		|		|		|
 |	current_framerate	|	runtime/current_framerate.md	|		|		|		|
