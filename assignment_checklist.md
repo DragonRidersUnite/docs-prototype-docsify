@@ -12,8 +12,8 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	benchmark	|	runtime/benchmark.md	|	dcrawl	|	X	|		|
 |	production?	|	runtime/production?.md	|	dcrawl	|	X	|		|
 |	current_framerate	|	runtime/current_framerate.md	|	dcrawl	|	X	|		|
-|	disable_console	|	runtime/disable_console.md	|	dcrawl	|		|		|
-|	download_stb_rb	|	runtime/download_stb_rb.md	|		|		|		|
+|	disable_console	|	runtime/disable_console.md	|	dcrawl	|	X	|		|
+|	download_stb_rb	|	runtime/download_stb_rb.md	|	dcrawl	|		|		|
 |	download_stb_raw	|	runtime/download_stb_raw.md	|		|		|		|
 |	enable_console	|	runtime/enable_console.md	|		|		|		|
 |	framerate_diagnostics_primitives	|	runtime/framerate_diagnostics_primitives.md	|		|		|		|
