@@ -132,10 +132,12 @@ end
 
 If audio doesn't seem to be working, try re-encoding it via ffmpeg:
 
-### re-encode ogg
+**re-encode ogg**
+
 `ffmpeg -i ./mygame/sounds/SOUND.ogg -ac 2 -b:a 160k -ar 44100 -acodec libvorbis ./mygame/sounds/SOUND-converted.ogg`
 
-### convert wav to ogg
+**convert wav to**
+
 `ffmpeg -i ./mygame/sounds/SOUND.wav -ac 2 -b:a 160k -ar 44100 -acodec libvorbis ./mygame/sounds/SOUND-converted.ogg`
 
 
