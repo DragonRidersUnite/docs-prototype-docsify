@@ -3,3 +3,4 @@
 * API
   * [Ruby](/docs/API/ruby.md)
   * [$gtk](/docs/API/runtime.md)
+  * [cvars](/docs/API/cvars.md)
