@@ -5,6 +5,7 @@
   * [Outputs](/docs/API/outputs.md)
   * [Audio](/docs/API/audio.md)
   * [Easing](/docs/API/easing.md)
+  * [Grid](/docs/API/grid.md)
   * [Layout](/docs/API/layout.md)
   * [Pixel Arrays](/docs/API/pixel_arrays.md)
   * [cvars](/docs/API/cvars.md)
