@@ -75,7 +75,7 @@ Given a `row:`, `col:`, `w:`, `h:`, returns a Hash with properties `x`, `y`, `w`
 
 Function returns an array of primities that can be rendered to the screen to help you place items within the grid.
 
-### Example:
+**Example:**
 
 ```ruby
 def tick args
