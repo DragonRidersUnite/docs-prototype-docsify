@@ -9,7 +9,7 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	cli_arguments	|	runtime/cli_arguments.md	|	dcrawl	|	X	|		|
 |	quit_requested?	|	runtime/quit_requested?.md	|	dcrawl	|	X	|		|
 |	request_quit	|	runtime/request_quit.md	|	dcrawl	|	X	|		|
-|	benchmark	|	runtime/benchmark.md	|		|		|		|
+|	benchmark	|	runtime/benchmark.md	|	dcrawl	|		|		|
 |	production?	|	runtime/production?.md	|		|		|		|
 |	current_framerate	|	runtime/current_framerate.md	|		|		|		|
 |	disable_console	|	runtime/disable_console.md	|		|		|		|
