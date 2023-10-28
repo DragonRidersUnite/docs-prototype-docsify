@@ -38,8 +38,8 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	start_replay	|	runtime/start_replay.md	|		|		|		|
 |	stop_recording	|	runtime/stop_recording.md	|		|		|		|
 |	stop_replay	|	runtime/stop_replay.md	|		|		|		|
-|	append_file	|	runtime/append_file.md	|		|		|		|
-|	append_file_root	|	runtime/append_file_root.md	|		|		|		|
+|	append_file	|	runtime/append_file.md	|	dcrawl	|	X	|		|
+|	append_file_root	|	runtime/append_file_root.md	|	dcrawl |	X	|		|
 |	delete_file	|	runtime/delete_file.md	|		|		|		|
 |	delete_file_if_exist	|	runtime/delete_file_if_exist.md	|		|		|		|
 |	get_base_dir	|	runtime/get_base_dir.md	|		|		|		|
