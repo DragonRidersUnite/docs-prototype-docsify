@@ -1,4 +1,4 @@
- * Guides & Tutorials
+* Guides & Tutorials
   * [Getting Started](/docs/guides/getting-started.md)
 * API
   * [$gtk](/docs/API/runtime.md)
