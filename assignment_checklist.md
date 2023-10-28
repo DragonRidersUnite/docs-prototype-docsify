@@ -5,8 +5,8 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 
 |	Method	|	File Location	|	Assignee	|	Done	|	Reviewed	|
 |	---	|	---	|	---	|	---	|	---	|
-|	argv	|	runtime/argv.md	|		|		|		|
-|	cli_arguments	|	runtime/cli_arguments.md	|		|		|		|
+|	argv	|	runtime/argv.md	|	dcrawl	| X		|		|
+|	cli_arguments	|	runtime/cli_arguments.md	|	dcrawl	|		|		|
 |	quit_requested?	|	runtime/quit_requested?.md	|		|		|		|
 |	request_quit	|	runtime/request_quit.md	|		|		|		|
 |	benchmark	|	runtime/benchmark.md	|		|		|		|
