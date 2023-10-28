@@ -60,7 +60,7 @@ end
 ```
 
 
-!> IMPORTANT: Please take note that gain and pitch must be given float values (eg gain: 1.0, not gain: 1 or game: 0).
+!> IMPORTANT: Please take note that gain and pitch must be given float values (eg gain: 1.0, not gain: 1 or gain: 0).
 
 
 ## Advanced Audio Manipulate (Crossfade) 
