@@ -31,7 +31,7 @@ Primitives are rendered first-in, first-out. The rendering order (sorted by bott
 Add primitives to this collection to render a *filled geometric shape* to the screen.  Currently, only quads and triangles (with the Indie/Pro version) are supported.
 
 
-### Rendering a solid using an Array
+### Using an Array
 
 Creates a solid black rectangle located at 100, 100. 160 pixels wide and 90 pixels tall.
 
@@ -42,7 +42,7 @@ def tick args
 end
 ```
 
-### Rendering a solid using an Array with colors and alpha
+### An Array with colors and alpha
 
 The value for the color and alpha is a number between 0 and 255. The alpha property is optional and will be set to 255 if not specified.
 
@@ -55,7 +55,7 @@ def tick args
 end
 ```
 
-### Rendering a solid using a Hash
+### Using a Hash
 
 If you want a more readable invocation. You can use the following hash to create a solid. Any parameters that are not specified will be given a default value. The keys of the hash can be provided in any order.
 
@@ -77,7 +77,7 @@ def tick args
 end
 ```
 
-### Rendering a solid using a Class
+### Using a Class
 
 You can also create a class with solid properties and render it as a primitive. ALL properties must be on the class. *Additionally*, a method called primitive_marker must be defined on the class.
 
@@ -139,7 +139,7 @@ end
 
 Add primitives to this collection to render a sprite to the screen.
 
-### Rendering a sprite using an Array
+### Using an Array
 
 Creates a sprite of a white circle located at 100, 100. 160 pixels wide and 90 pixels tall.
 
@@ -150,7 +150,7 @@ def tick args
 end
 ```
 
-### Rendering a sprite using an Array with colors and alpha
+### An Array with colors and alpha
 
 The value for the color and alpha is a number between 0 and 255. The alpha property is optional and will be set to 255 if not specified.
 
@@ -163,7 +163,7 @@ def tick args
 end
 ```
 
-### Rendering a sprite using a Hash
+### Using a Hash
 
 If you want a more readable invocation. You can use the following hash to create a sprite. Any parameters that are not specified will be given a default value. The keys of the hash can be provided in any order.
 
@@ -184,7 +184,7 @@ def tick args
 end
 ```
 
-### Rendering a sprite using a Class
+### Using a Class
 
 You can also create a class with solid/border properties and render it as a primitive. ALL properties must be on the class. *Additionally*, a method called primitive_marker must be defined on the class.
 
@@ -240,7 +240,7 @@ end
 
 Add primitives to this collection to render a label.
 
-### Rendering a label using an Array 
+### Using an Array 
 
 Labels represented as Arrays/Tuples:
 
@@ -270,7 +270,7 @@ def tick args
 end
 ```
 
-### Rendering a label using a Hash
+### Using a Hash
 
 ```ruby
 def tick args
