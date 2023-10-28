@@ -14,7 +14,7 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	current_framerate	|	runtime/current_framerate.md	|	dcrawl	|	X	|		|
 |	disable_console	|	runtime/disable_console.md	|	dcrawl	|	X	|		|
 |	download_stb_rb	|	runtime/download_stb_rb.md	|	dcrawl	| X |		|
-|	download_stb_raw	|	runtime/download_stb_raw.md	|		|		|		|
+|	download_stb_raw	|	runtime/download_stb_raw.md	|	dcrawl	|		|		|
 |	enable_console	|	runtime/enable_console.md	|		|		|		|
 |	framerate_diagnostics_primitives	|	runtime/framerate_diagnostics_primitives.md	|		|		|		|
 |	hide_console	|	runtime/hide_console.md	|		|		|		|
