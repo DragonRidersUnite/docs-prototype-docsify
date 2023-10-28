@@ -19,5 +19,7 @@ Brett Chalupa (one of our community members) has written a book to help you get 
 
 Here are some videos to help you get the lay of the land.
 
-Building Tetris - Part 1: https://youtu.be/xZMwRSbC4rY
-Building Tetris - Part 2: https://youtu.be/C3LLzDUDgz4
+| Series | Link |
+| --- | --- |
+|Building Tetris | [Part 1](https://youtu.be/xZMwRSbC4rY) |
+|Building Tetris | [Part 2](https://youtu.be/C3LLzDUDgz4) |
