@@ -1,7 +1,7 @@
 # download_stb_rb(URL), download_stb_rb(github_user, repository, file)
 
 | Parameter | Class | Parameter | Class |
-| --- | --- |
+| --- | --- | --- | --- |
 | URL | String | github_user | String |
 |  |  |  repository | String |
 | | | file | String |
