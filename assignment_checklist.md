@@ -15,8 +15,8 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	disable_console	|	runtime/disable_console.md	|	dcrawl	|	X	|		|
 |	download_stb_rb	|	runtime/download_stb_rb.md	|	dcrawl	| X |		|
 |	download_stb_raw	|	runtime/download_stb_raw.md	|	dcrawl	|	X	|		|
-|	enable_console	|	runtime/enable_console.md	|	dcrawl	|		|		|
-|	framerate_diagnostics_primitives	|	runtime/framerate_diagnostics_primitives.md	|		|		|		|
+|	enable_console	|	runtime/enable_console.md	|	dcrawl	|	X	|		|
+|	framerate_diagnostics_primitives	|	runtime/framerate_diagnostics_primitives.md	|	dcrawl	|		|		|
 |	hide_console	|	runtime/hide_console.md	|		|		|		|
 |	notify_extended!	|	runtime/notify_extended!.md	|		|		|		|
 |	notify!	|	runtime/notify!.md	|		|		|		|
