@@ -21,8 +21,8 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	notify_extended!	|	runtime/notify_extended!.md	|	dcrawl	|	X	|		|
 |	notify!	|	runtime/notify!.md	|	dcrawl	|	X	|		|
 |	open_game_dir	|	runtime/open_game_dir.md	| dcrawl |	X	|		|
-|	reload_history	|	runtime/reload_history.md	|	dcrawl	|		|		|
-|	reload_history_pending	|	runtime/reload_history_pending.md	|		|		|		|
+|	reload_history	|	runtime/reload_history.md	|	dcrawl	|	X	|		|
+|	reload_history_pending	|	runtime/reload_history_pending.md	|	dcrawl	|		|		|
 |	reload_if_needed	|	runtime/reload_if_needed.md	|		|		|		|
 |	reset	|	runtime/reset.md	|		|		|		|
 |	reset_next_tick	|	runtime/reset_next_tick.md	|		|		|		|
