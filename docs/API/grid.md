@@ -1,4 +1,4 @@
-#args.grid
+# args.grid
 
 Returns the virtual grid for the game.
 
