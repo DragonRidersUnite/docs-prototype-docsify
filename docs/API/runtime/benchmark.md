@@ -1,4 +1,4 @@
-# benchmark
+# benchmark(definition)
 
 | Parameter | Class |
 | --- | --- |
