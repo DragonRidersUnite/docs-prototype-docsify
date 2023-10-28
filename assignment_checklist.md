@@ -18,8 +18,8 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	enable_console	|	runtime/enable_console.md	|	dcrawl	|	X	|		|
 |	framerate_diagnostics_primitives	|	runtime/framerate_diagnostics_primitives.md	|	dcrawl	|	X	|		|
 |	hide_console	|	runtime/hide_console.md	|dcrawl		|	X	|		|
-|	notify_extended!	|	runtime/notify_extended!.md	|	dcrawl	|		|		|
-|	notify!	|	runtime/notify!.md	|		|		|		|
+|	notify_extended!	|	runtime/notify_extended!.md	|	dcrawl	|	X	|		|
+|	notify!	|	runtime/notify!.md	|	dcrawl	|		|		|
 |	open_game_dir	|	runtime/open_game_dir.md	|		|		|		|
 |	reload_history	|	runtime/reload_history.md	|		|		|		|
 |	reload_history_pending	|	runtime/reload_history_pending.md	|		|		|		|
