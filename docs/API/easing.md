@@ -47,15 +47,15 @@ end
 
 There are a number of easing definitions availble to you:
 
-### \:identity
+### `:identity`
 
 The easing definition for `:identity` is `f(x) = x`. For example, if `start_tick` is 0, `current_tick` is 50, and `duration` is 100, then `args.easing.ease 0, 50, 100, :identity` will return 0.5 (since tick 50 is half way between 0 and 100).
 
-### \:flip
+### `:flip`
 
 The easing definition for `:flip` is `f(x) = 1 - x`. For example, if `start_tick` is 0, `current_tick` is 10, and `duration` is 100, then `args.easing.ease 0, 10, 100, :flip` will return 0.9 (since tick 10 means 100% - 10%).
 
-### \:quad, \:cube, \:quart, \:quint
+### `:quad`, `:cube`, `:quart`, `:quint`
 
 These are the power easing definitions. `:quad` is `f(x) = x * x (x squared)`, `:cube` is `f(x) = x * x * x (x cubed)`, etc.
 
