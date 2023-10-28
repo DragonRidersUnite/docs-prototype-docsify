@@ -1,8 +1,8 @@
 # args.outputs
 
-DragonRuby has a powerful and yet simple to use method of drawing called `outputs`.  Arrays, Hashes and Classes can be used to define the data used to draw through `outputs`.  Each piece of data is marked as one of the drawing primitives: border, label, line, solid or sprite.     
+DragonRuby calls anything that can be rendered to the screen a **primitive** which can be defined using *Arrays, Hashes* and *Classes*.  Primitives can be of the type: border, label, line, solid or sprite.
 
-`Outputs` is how you render primitives to the screen. The minimal setup for rendering something to the screen is via a tick method defined in mygame/app/main.rb
+`Outputs` is how you render primitives to the screen. The minimal setup for rendering something to the screen is through a tick method defined in `mygame/app/main.rb`
 
 ```ruby
 def tick args
@@ -14,6 +14,7 @@ end
 ```
 
 ## Render Order
+
 Primitives are rendered first-in, first-out. The rendering order (sorted by bottom-most to top-most):
 
 1. solids
@@ -24,9 +25,10 @@ Primitives are rendered first-in, first-out. The rendering order (sorted by bott
 1. borders
 1. debug: Accepts all render primitives. Use this to render primitives for debugging (production builds of your game will not render this layer)
 
+
 ## solids
 
-Add primitives to this collection to render a solid to the screen.
+Add primitives to this collection to render a *filled geometric shape* to the screen.  Currently, only quads and triangles (with the Indie/Pro version) are supported.
 
 
 ### Rendering a solid using an Array
