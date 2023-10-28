@@ -1,5 +1,4 @@
-# download_stb_rb(URL)
-# download_stb_rb(github_user, repository, file)
+# download_stb_rb(URL), download_stb_rb(github_user, repository, file)
 
 | Parameter | Class |
 | --- | --- |
