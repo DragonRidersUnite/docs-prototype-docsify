@@ -8,21 +8,29 @@ There is a property on state called tick_count that is incremented by DragonRuby
 def tick args
   args.outputs.labels << [10, 670, "#{args.state.tick_count}"]
 end
-How To Get Current Framerate link
+```
+
+## How To Get Current Framerate
+
 Current framerate is a top level property on the Game Toolkit Runtime and is accessible via args.gtk.current_framerate.
 
+```ruby
 def tick args
   args.outputs.labels << [10, 710, "framerate: #{args.gtk.current_framerate.round}"]
 end
-How To Render A Sprite Using An Array link
+```
+
+## How To Render A Sprite Using An Array
+
 All file paths should use the forward slash / *not* backslash . Game Toolkit includes a number of sprites in the sprites folder (everything about your game is located in the mygame directory).
 
 The following code renders a sprite with a width and height of 100 in the center of the screen.
 
 args.outputs.sprites is used to render a sprite.
 
-NOTE: Rendering using an Array is "quick and dirty". It's generally recommended that you render using Hashes long term.
+!> NOTE: Rendering using an Array is "quick and dirty". It's generally recommended that you render using Hashes long term.
 
+```ruby
 def tick args
   args.outputs.sprites << [
     640 - 50,                 # X
