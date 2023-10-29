@@ -1,6 +1,6 @@
 # args.inputs
 
-Access using input using `args.inputs`.
+Access input properties using `args.inputs`.
 
 | Properties | Description |
 | --- | --- |
