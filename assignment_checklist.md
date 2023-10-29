@@ -35,9 +35,9 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	warn_array_primitives!	|	runtime/warn_array_primitives!.md	|		|	X	|		|
 |	cancel_recording	|	runtime/cancel_recording.md	|		|	X	|		|
 |	start_recording	|	runtime/start_recording.md	|		|	X	|		|
-|	start_replay	|	runtime/start_replay.md	|		|		|		|
-|	stop_recording	|	runtime/stop_recording.md	|		|		|		|
-|	stop_replay	|	runtime/stop_replay.md	|		|		|		|
+|	start_replay	|	runtime/start_replay.md	|		|	X	|		|
+|	stop_recording	|	runtime/stop_recording.md	|		|	X	|		|
+|	stop_replay	|	runtime/stop_replay.md	|		|	X	|		|
 |	append_file	|	runtime/append_file.md	|	dcrawl	|	X	|		|
 |	append_file_root	|	runtime/append_file_root.md	|	dcrawl |	X	|		|
 |	delete_file	|	runtime/delete_file.md	|		|		|		|
