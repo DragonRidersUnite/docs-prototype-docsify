@@ -12,7 +12,7 @@
   * [cvars](/docs/API/cvars.md)
   * [Ruby](/docs/API/ruby.md)
 * Guides & Tutorials
-  * [New Project](/docs/guides/new_project.md)
+  * [DR Projects & Github](/docs/guides/new_project.md)
   * [Deploy to Itch.io](/docs/guides/deploy_itch.md)
   * [Deploy to Mobile](/docs/guides/deploy_mobile.md)
   * [Deploy to Steam](/docs/guides/deploy_steam.md)
