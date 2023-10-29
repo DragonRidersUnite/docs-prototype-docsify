@@ -9,7 +9,7 @@ An Array is an ordered, integer-indexed collection of objects, called elements. 
 
 The Array class has been extended to provide methods that will help in common game development tasks. Array is one of the most powerful classes in Ruby and a very fundamental component of Game Toolkit.  Only the modifications are recorded here.  Visit the [mRuby website](https://mruby.org/docs/api/Array.html) for the complete docs on this class.
 
-## map_2d 
+## map_2d &block
 
 Assuming the array is an array of arrays, Given a block, each 2D array index invoked against the block. A 2D array is a common way to store data/layout for a stage.
 
@@ -37,13 +37,14 @@ repl do
 end
 ```
 
-## include_any?
+## include_any?(other_array)
 
-Given a collection of items, the function will return true if any of self's items exists in the collection of items passed in:
+This function returns true if any of the items in the calling array exist in the `other_array` of items passed as an argument.
 
-## any_intersect_rect?
 
-Assuming the array contains objects that respond to left, right, top, bottom, this method returns true if any of the elements within the array intersect the object being passed in. You are given an optional parameter called tolerance which informs how close to the other rectangles the elements need to be for it to be considered intersecting.
+## any_intersect_rect?(object)
+
+Assuming the array contains objects that respond to `left`, `right`, `top`, `bottom`, this method returns **true** if any of the elements within the array intersect the object being passed in. You are given an optional parameter called `tolerance` which informs how close to the other rectangles the elements need to be for it to be considered intersecting.
 
 The default tolerance is set to 0.1, which means that the primitives are not considered intersecting unless they are overlapping by more than 0.1.
 
@@ -104,7 +105,7 @@ repl do
 end
 ```
 
-## map
+## map &block
 
 The function given a block returns a new Enumerable of values.
 
@@ -143,7 +144,7 @@ def tick args
 end
 ```
 
-## each
+## each &block
 
 The function, given a block, invokes the block for each item in the Array. Array#each is synonymous to foreach constructs in other languages.
 
