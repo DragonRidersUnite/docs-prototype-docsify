@@ -28,9 +28,9 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	reset_next_tick	|	runtime/reset_next_tick.md	|	dcrawl	|	X	|		|
 |	reset_sprite	|	runtime/reset_sprite.md	|	dcrawl	|	X	|		|
 |	reset_sprites	|	runtime/reset_sprites.md	|	dcrawl	|	X	|		|
-|	show_console	|	runtime/show_console.md	|	dcrawl	|		|		|
-|	slowmo!	|	runtime/slowmo!.md	|		|		|		|
-|	version	|	runtime/version.md	|		|		|		|
+|	show_console	|	runtime/show_console.md	|	dcrawl	|	X	|		|
+|	slowmo!	|	runtime/slowmo!.md	|	dcrawl	|	X	|		|
+|	version	|	runtime/version.md	|	dcrawl	|		|		|
 |	version_pro?	|	runtime/version_pro?.md	|		|		|		|
 |	warn_array_primitives!	|	runtime/warn_array_primitives!.md	|		|		|		|
 |	cancel_recording	|	runtime/cancel_recording.md	|		|		|		|
