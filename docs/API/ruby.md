@@ -17,7 +17,7 @@ Below are a list of Classes that DragonRuby has modified to add support for game
 ### Modules
 | Name | Description |
 |---|---|
-|	[Kernel](ruby/kernel.md)	|		|
+|	[Kernel](ruby/kernel.md)	|	The Kernel module is included by class Object, so its methods are available in every Ruby object.	|
 
 
 
