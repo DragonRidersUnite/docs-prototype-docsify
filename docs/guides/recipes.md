@@ -192,13 +192,20 @@ def tick args
   #                       X    Y    TEXT
   args.outputs.labels << [640, 360, "I am a black label."]
 end
-A Colored Label link
+```
+
+## A Colored Label
+
+```ruby
 def tick args
   # A colored label
   #                       X    Y    TEXT,                   RED    GREEN  BLUE  ALPHA
   args.outputs.labels << [640, 360, "I am a redish label.", 255,     128,  128,   255]
 end
-Extended Label Properties link
+```
+
+## Extended Label Properties
+```ruby
 def tick args
   # A colored label
   #                       X    Y     TEXT           SIZE  ALIGNMENT  RED  GREEN  BLUE  ALPHA  FONT FILE
