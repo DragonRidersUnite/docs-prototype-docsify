@@ -174,8 +174,8 @@ end
 
 Given a Rectangle this function returns a new rectangle with a scaled size.
 
-`ratio`: the ratio by which to scale the rect. A ratio of 2 will double the dimensions of the rect while a ratio of 0.5 will halve its dimensions.
-`anchor_x` and `anchor_y` specify the point within the rect from which to resize it. Setting both to 0 will affect the width and height of the rect, leaving `x` and `y` unchanged. Setting both to 0.5 will scale all sides of the rect proportionally from the center.
+* `ratio`: the ratio by which to scale the rect. A ratio of 2 will double the dimensions of the rect while a ratio of 0.5 will halve its dimensions.
+* `anchor_x` and `anchor_y` specify the point within the rect from which to resize it. Setting both to 0 will affect the width and height of the rect, leaving `x` and `y` unchanged. Setting both to 0.5 will scale all sides of the rect proportionally from the center.
 
 ```ruby
 def tick args
@@ -339,6 +339,7 @@ end
 * args.geometry.point_inside_circle? point_1, circle_center, circle_radius
 
 Returns true if a point is inside of a circle defined as a center point and radius.
+
 ```ruby
 def tick args
   # define circle center
@@ -406,6 +407,7 @@ end
 * args.geometry.center_inside_rect target_rect, reference_rect
 
 Given a target rect and a reference rect, the target rect is centered inside the reference rect (a new rect is returned).
+
 ```ruby
 def tick args
   rect_1 = {
