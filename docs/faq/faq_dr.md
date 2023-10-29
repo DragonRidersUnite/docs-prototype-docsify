@@ -115,8 +115,10 @@ You can use DragonRuby's replay capabilities to troubleshoot:
 
 DragonRuby is hot loaded which gives you a very fast feedback loop (if the game throws an exception, it's because of the code you just added).
 Use `./dragonruby mygame --record` to create a game play recording that you can use to find the exception (you can replay a recording by executing `./dragonruby mygame --replay last_replay.txt` or through the DragonRuby Console using `$gtk.recording.start_replay "last_replay.txt"`.
+
 DragonRuby also ships with a unit testing facility. You can invoke the following command to run a test: `./dragonruby mygame --test tests/some_ruby_file.rb`.
 Get into the habit of adding debugging facilities within the game itself. You can add drawing primitives to `args.outputs.debug` that will render on top of your game but will be ignored in a production release.
+
 Debugging something that runs at 60fps is (imo) not that helpful. The exception you are seeing could have been because of a change that occurred many frames ago.
 
 
