@@ -10,7 +10,6 @@ Below are a list of Classes that DragonRuby has modified to add support for game
 | Name | Inherits | Modules | Description |
 |---|---|---|---|
 |	[Array](ruby/array.md)	|	Object|	Enumerable|	An ordered, integer-indexed collection of objects. |
-|	[Hash](ruby/hash.md)	|	Object	|	Enumerable |		|
 |	[Numeric](ruby/numeric.md)	|	Object |	Comparable , ValueType	|		|
 
 
