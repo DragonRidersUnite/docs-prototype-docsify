@@ -2,6 +2,7 @@
 * API
   * [$gtk](/docs/API/runtime.md)
   * [Outputs](/docs/API/outputs.md)
+  * [State](/docs/API/state.md)
   * [Audio](/docs/API/audio.md)
   * [Easing](/docs/API/easing.md)
   * [Grid](/docs/API/grid.md)
