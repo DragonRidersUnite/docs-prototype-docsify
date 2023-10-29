@@ -26,9 +26,9 @@ def tick args
 end
 ```
 
-## Mouse (args.inputs.mouse)
+## Mouse
 
-Represents the user's mouse.
+Represents the user's mouse. (args.inputs.mouse)
 
 | Properties | Description |
 | --- | --- |
@@ -49,7 +49,7 @@ Represents the user's mouse.
 | inside_circle? | center_point, radius | Returns true if the mouse is inside of a specified circle. `args.inputs.mouse.inside_circle?` takes in any primitive that responds to `x`, `y` (which represents the circle's center), and takes in a `radius`. |
 
 
-## Touch 
+## Touch
 
 The following touch apis are available on touch devices (iOS, Android, Mobile Web, Surface).
 
@@ -60,9 +60,9 @@ The following touch apis are available on touch devices (iOS, Android, Mobile We
 | finger_right | Returns a Hash with x and y denoting a touch point that is on the right side of the screen.|
 
 
-## Controller (args.inputs.controller_(one-four))
+## Controller
 
-Represents controllers connected to the usb ports.
+Represents controllers (args.inputs.controller_(one-four)) connected to the usb ports. 
 
 | Properties | Description |
 | --- | --- |
@@ -87,9 +87,9 @@ Represents controllers connected to the usb ports.
 | key_held | Returns true if the specific button is being held. `args.inputs.controller_(one-four).key_held.BUTTON` will be true for all frames after `key_down` (until released).|
 |key_up | Returns true if the specific button was released. `args.inputs.controller_(one-four).key_up.BUTTON` will be true only on the frame the button was released.|
 
-## Keyboard (args.inputs.keyboard) 
+## Keyboard
 
-Represents the user's keyboard.
+Represents the user's keyboard. (args.inputs.keyboard) 
 
 | Properties | Description |
 | --- | --- |
