@@ -305,7 +305,7 @@ def tick args
 end
 ```
 
-## Chroma key (Making a color transparent)
+### Chroma key (Making a color transparent)
 
 By specifying the r, g, b and a keys of the hash you change the transparency of a color in the resulting PNG file. This can be useful if you want to create files with transparent background like spritesheets. The transparency of the color specified by r, g, b will be set to the transparency specified by a.
 
