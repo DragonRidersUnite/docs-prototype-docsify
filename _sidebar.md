@@ -10,3 +10,4 @@
   * [Pixel Arrays](/docs/API/pixel_arrays.md)
   * [cvars](/docs/API/cvars.md)
   * [Ruby](/docs/API/ruby.md)
+* [FAQ](/docs/faq/faq_dr.md)
