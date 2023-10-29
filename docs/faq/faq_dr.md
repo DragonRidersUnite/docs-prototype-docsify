@@ -107,7 +107,7 @@ xrepl do
 end
 ```
 
-## Does DragonRuby support pry or have any other debugging facilities?
+### Does DragonRuby support pry or have any other debugging facilities?
 
 `pry` is a gem that assumes you are using the MRI Runtime (which is incompatible with DragonRuby). Eventually DragonRuby will have a pry based experience that is compatible with a debugging infrastructure called LLDB. Take the time to read about LLDB as it shows the challenges in creating something that is compatible.
 
