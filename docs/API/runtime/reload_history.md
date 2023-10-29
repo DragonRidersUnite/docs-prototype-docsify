@@ -28,4 +28,4 @@ Returns a Hash representing the code files that have be loaded for your game alo
 
 ## Related Functions
 
-[production?](production.md), [reload_history_pending](reload_history_pending.md)
+[production?](production.md), [reload_history_pending](reload_history_pending.md), [reload_if_needed](reload_if_needed.md)
