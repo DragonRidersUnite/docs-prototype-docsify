@@ -1,9 +1,4 @@
-* Guides & Tutorials
-  * [Getting Started](/docs/guides/getting-started.md)
-  * [New Project](/docs/guides/new_project.md)
-  * [Deploy to Itch.io](/docs/guides/deploy_itch.md)
-  * [Deploy to Mobile](/docs/guides/deploy_mobile.md)
-  * [Deploy to Steam](/docs/guides/deploy_steam.md)
+* [Getting Started](/docs/guides/getting-started.md)
 * API
   * [$gtk](/docs/API/runtime.md)
   * [Outputs](/docs/API/outputs.md)
@@ -14,5 +9,10 @@
   * [Pixel Arrays](/docs/API/pixel_arrays.md)
   * [cvars](/docs/API/cvars.md)
   * [Ruby](/docs/API/ruby.md)
+ * Guides & Tutorials
+  * [New Project](/docs/guides/new_project.md)
+  * [Deploy to Itch.io](/docs/guides/deploy_itch.md)
+  * [Deploy to Mobile](/docs/guides/deploy_mobile.md)
+  * [Deploy to Steam](/docs/guides/deploy_steam.md)
 * [FAQ](/docs/faq/faq_dr.md)
   * [DragonRuby Philosophy](/docs/faq/dragonruby_philo.md)
