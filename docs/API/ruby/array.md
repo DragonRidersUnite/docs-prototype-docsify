@@ -2,146 +2,227 @@
 
 | | |
 |---|---|
-| Ancestors:| [Object](object.md) |
-| Modules: | [Enumerable](enumerable.md) |
+| Ancestors:| Object|
+| Modules: | Enumerable |
 
 An Array is an ordered, integer-indexed collection of objects, called elements. Any object (even another array) may be an array element, and an array can contain objects of different types.
 
-The Array class has been extended to provide methods that will help in common game development tasks. Array is one of the most powerful classes in Ruby and a very fundamental component of Game Toolkit.
+The Array class has been extended to provide methods that will help in common game development tasks. Array is one of the most powerful classes in Ruby and a very fundamental component of Game Toolkit.  Only the modifications are recorded here.  Visit the [mRuby website](https://mruby.org/docs/api/Array.html) for the complete docs on this class.
 
-## Class Methods
+## map_2d 
 
-| Method | Parameters | Description |
-| --- | --- | --- |
-| \[\] | *args | Returns a new array populated with the given objects (args) |
-| new | | Returns a new empty array |
-| new | array | Returns a new array formed from the array parameter |
-| new | size | Returns a new array with size elements containing nil |
-| new | size, default | Returns a new array with size elements each containing the default value |
-| new | size {\|index\| } | Returns a new array with size elements each containing the return value of the block function | 
-| try_convert | object | Returns an array created from object. Returns nil or throws an exception, if it fails. |
+Assuming the array is an array of arrays, Given a block, each 2D array index invoked against the block. A 2D array is a common way to store data/layout for a stage.
 
-## Operator Methods
+```ruby
+repl do
+  stage = [
+    [:enemy, :empty, :player],
+    [:empty, :empty,  :empty],
+    [:enemy, :empty,  :enemy],
+  ]
 
-| Method | Parameters | Description |
-| --- | --- | --- |
-| & | other_array | Returns a new Array containing distinct elements from both arrays. Elements are compared using eql? |
-| * | n | When non-negative argument Integer n is given, returns a new Array built by concatenating the n copies of self |
-| + | other_array |  Returns a new Array containing all elements of array followed by all elements of other_array |
-| - | other_array | Returns a new Array containing only those elements from the first array that are not found in other_array; items are compared using eql?; the order from array is preserved |
-| << | object | Appends object to the array |
-| <=> | other_array | Returns -1, 0, or 1 as self is less than, equal to, or greater than other_array.  |
-| == | other_array | Returns true if the size and elements of both arrays are equal. |
+  occupied_tiles = stage.map_2d do |row, col, tile|
+    if tile == :empty
+      nil
+    else
+      [row, col, tile]
+    end
+  end.reject_nil
 
+  puts "Stage:"
+  puts stage
 
-## Instance Methods
+  puts "Occupied Tiles"
+  puts occupied_tiles
+end
+```
 
-| Method | Parameters | Description |
-| --- | --- | --- |
-| \[\] | index | Returns the element at offset index |
-| \[index\]= | object | Assigns object to the array at offset index |
-| any_intersect_rect? |  |  |
-| append |  |  |
-| assoc |  |  |
-| at |  |  |
-| bsearch |  |  |
-| bsearch_index |  |  |
-| clear |  |  |
-| collect! |  |  |
-| combination |  |  |
-| compact |  |  |
-| compact! |  |  |
-| concat |  |  |
-| copy |  |  |
-| delete |  |  |
-| delete_at |  |  |
-| delete_if |  |  |
-| difference |  |  |
-| dig |  |  |
-| each |  |  |
-| each_index |  |  |
-| empty? |  |  |
-| eql? |  |  |
-| fetch |  |  |
-| fill |  |  |
-| filter! |  |  |
-| first |  |  |
-| flatten |  |  |
-| flatten! |  |  |
-| include_any? |  |  |
-| index |  |  |
-| initialize |  |  |
-| initialize_copy |  |  |
-| insert |  |  |
-| inspect |  |  |
-| intersection |  |  |
-| join |  |  |
-| keep_if |  |  |
-| last |  |  |
-| length |  |  |
-| map |  |  |
-| map! |  |  |
-| map_2d |  |  |
-| map_with_index |  |  |
-| pack |  |  |
-| pairs_to_hash |  |  |
-| permutation |  |  |
-| pop |  |  |
-| prepend |  |  |
-| product |  |  |
-| push |  |  |
-| rassoc |  |  |
-| reject |  |  |
-| reject! |  |  |
-| reject_false |  |  |
-| reject_falsey |  |  |
-| reject_nil |  |  |
-| replace |  |  |
-| rest |  |  |
-| reverse |  |  |
-| reverse! |  |  |
-| reverse_each |  |  |
-| rindex |  |  |
-| rotate |  |  |
-| rotate! |  |  |
-| sample |  |  |
-| second |  |  |
-| select! |  |  |
-| serialize |  |  |
-| shift |  |  |
-| shuffle |  |  |
-| shuffle! |  |  |
-| size |  |  |
-| slice |  |  |
-| slice! |  |  |
-| sort |  |  |
-| sort! |  |  |
-| third |  |  |
-| to_a |  |  |
-| to_a_pairs |  |  |
-| to_h |  |  |
-| to_s |  |  |
-| transpose |  |  |
-| union |  |  |
-| uniq |  |  |
-| uniq! |  |  |
-| unshift |  |  |
-| value |  |  |
-| values_at |  |  |
+## include_any?
 
+Given a collection of items, the function will return true if any of self's items exists in the collection of items passed in:
 
-## Undocumented
+## any_intersect_rect?
 
-| Method | Parameters | Description |
-| --- | --- | --- |
-| \_\_ary_cmp |  |  |
-| \_\_ary_eq |  |  |
-| \_\_ary_index |  |  |
-| \_\_original_add\_\_ |  |  |
-| \_\_original_map\_\_ |  |  |
-| \_\_original_reject\_\_ |  |  |
-| \_\_svalue |  |  |
-| \_inspect |  |  |
-| a_each |  |  |
-| a_map |  |  |
+Assuming the array contains objects that respond to left, right, top, bottom, this method returns true if any of the elements within the array intersect the object being passed in. You are given an optional parameter called tolerance which informs how close to the other rectangles the elements need to be for it to be considered intersecting.
 
+The default tolerance is set to 0.1, which means that the primitives are not considered intersecting unless they are overlapping by more than 0.1.
+
+```ruby
+repl do
+  # Here is a player class that has position and implement
+  # the ~attr_rect~ contract.
+  class Player
+    attr_rect
+    attr_accessor :x, :y, :w, :h
+
+    def initialize x, y, w, h
+      @x = x
+      @y = y
+      @w = w
+      @h = h
+    end
+
+    def serialize
+      { x: @x, y: @y, w: @w, h: @h }
+    end
+
+    def inspect
+      "#{serialize}"
+    end
+
+    def to_s
+      "#{serialize}"
+    end
+  end
+
+  # Here is a definition of two walls.
+  walls = [
+     [10, 10, 10, 10],
+     { x: 20, y: 20, w: 10, h: 10 },
+   ]
+
+  # Display the walls.
+  puts "Walls."
+  puts walls
+  puts ""
+
+  # Check any_intersect_rect? on player
+  player = Player.new 30, 20, 10, 10
+  puts "Is Player #{player} touching wall?"
+  puts (walls.any_intersect_rect? player)
+  # => false
+  # The value is false because of the default tolerance is 0.1.
+  # The overlap of the player rect and any of the wall rects is
+  # less than 0.1 (for those that intersect).
+  puts ""
+
+  player = Player.new 9, 10, 10, 10
+  puts "Is Player #{player} touching wall?"
+  puts (walls.any_intersect_rect? player)
+  # => true
+  puts ""
+end
+```
+
+## map
+
+The function given a block returns a new Enumerable of values.
+
+Example of using Array#map in conjunction with args.state and args.outputs.sprites to render sprites to the screen.
+
+```ruby
+def tick args
+  # define the colors of the rainbow in ~args.state~
+  # as an ~Array~ of ~Hash~es with :order and :name.
+  # :order will be used to determine render location
+  #  and :name will be used to determine sprite path.
+  args.state.rainbow_colors ||= [
+    { order: 0, name: :red    },
+    { order: 1, name: :orange },
+    { order: 2, name: :yellow },
+    { order: 3, name: :green  },
+    { order: 4, name: :blue   },
+    { order: 5, name: :indigo },
+    { order: 6, name: :violet },
+  ]
+
+  # render sprites diagonally to the screen
+  # with a width and height of 50.
+  args.outputs
+      .sprites << args.state
+                      .rainbow_colors
+                      .map do |color| # <-- ~Array#map~ usage
+                        [
+                          color[:order] * 50,
+                          color[:order] * 50,
+                          50,
+                          50,
+                          "sprites/square-#{color[:name]}.png"
+                        ]
+                      end
+end
+```
+
+## each
+
+The function, given a block, invokes the block for each item in the Array. Array#each is synonymous to foreach constructs in other languages.
+
+Example of using Array#each in conjunction with args.state and args.outputs.sprites to render sprites to the screen:
+
+```ruby
+def tick args
+  # define the colors of the rainbow in ~args.state~
+  # as an ~Array~ of ~Hash~es with :order and :name.
+  # :order will be used to determine render location
+  #  and :name will be used to determine sprite path.
+  args.state.rainbow_colors ||= [
+    { order: 0, name: :red    },
+    { order: 1, name: :orange },
+    { order: 2, name: :yellow },
+    { order: 3, name: :green  },
+    { order: 4, name: :blue   },
+    { order: 5, name: :indigo },
+    { order: 6, name: :violet },
+  ]
+
+  # render sprites diagonally to the screen
+  # with a width and height of 50.
+  args.state
+      .rainbow_colors
+      .map do |color| # <-- ~Array#each~ usage
+        args.outputs.sprites << [
+          color[:order] * 50,
+          color[:order] * 50,
+          50,
+          50,
+          "sprites/square-#{color[:name]}.png"
+        ]
+      end
+end
+```
+
+## reject_nil
+
+Returns an Enumerable rejecting items that are nil, this is an alias for Array#compact:
+
+```ruby
+repl do
+  a = [1, nil, 4, false, :a]
+  puts a.reject_nil
+  # => [1, 4, false, :a]
+  puts a.compact
+  # => [1, 4, false, :a]
+end
+```
+
+## reject_false
+
+Returns an `Enumerable` rejecting items that are `nil` or `false`.
+
+```ruby
+repl do
+  a = [1, nil, 4, false, :a]
+  puts a.reject_false
+  # => [1, 4, :a]
+end
+```
+
+## product
+
+Returns all combinations of values between two arrays.
+
+Here are some examples of using product. Paste the following code at the bottom of main.rb and save the file to see the results:
+
+```ruby
+repl do
+  a = [0, 1]
+  puts a.product
+  # => [[0, 0], [0, 1], [1, 0], [1, 1]]
+end
+repl do
+  a = [ 0,  1]
+  b = [:a, :b]
+  puts a.product b
+  # => [[0, :a], [0, :b], [1, :a], [1, :b]]
+end
+```
