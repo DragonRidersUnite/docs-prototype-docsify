@@ -2,9 +2,19 @@
 
 Access using input using `args.inputs`.
 
-### last_active
+| Properties | Description |
+| --- | --- |
+| last_active | This function returns the last active input which will be set to either :keyboard, :mouse, or :controller. The function is helpful when you need to present on screen instructions based on the input the player chose to play with.
+|locale|Returns the ISO 639-1 two-letter langauge code based on OS preferences. Refer to the following link for locale strings: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes). Defaults to "en" if locale can't be retrieved (args.inputs.locale_raw will be nil in this case).|
+|up| Returns true if: the up arrow or w key is pressed or held on the keyboard; or if up is pressed or held on controller_one; or if the left_analog on controller_one is tilted upwards.|
+|down|Returns true if: the down arrow or s key is pressed or held on the keyboard; or if down is pressed or held on controller_one; or if the left_analog on controller_one is tilted downwards.|
+|left|Returns true if: the left arrow or a key is pressed or held on the keyboard; or if left is pressed or held on controller_one; or if the left_analog on controller_one is tilted to the left.|
+|right|Returns true if: the right arrow or d key is pressed or held on the keyboard; or if right is pressed or held on controller_one; or if the left_analog on controller_one is tilted to the right.|
+|left_right|Returns -1 (left), 0 (neutral), or +1 (right) depending on results of `args.inputs.left` and `args.inputs.right`. Example: `args.state.player[:x] += args.inputs.left_right * args.state.speed`|
+|up_down|Returns -1 (down), 0 (neutral), or +1 (up) depending on results of `args.inputs.down` and `args.inputs.up`. Example: `args.state.player[:y] += args.inputs.up_down * args.state.speed`|
+|text|Returns a string that represents the last key that was pressed on the keyboard.|
 
-This function returns the last active input which will be set to either :keyboard, :mouse, or :controller. The function is helpful when you need to present on screen instructions based on the input the player chose to play with.
+**last_active Example**
 
 ```ruby
 def tick args
@@ -15,46 +25,6 @@ def tick args
   end
 end
 ```
-
-`:mouse`, or `:controller`. The function is helpful when you need to present on screen instructions based on the input the player chose to play with.
-
-### locale
-
-Returns the ISO 639-1 two-letter langauge code based on OS preferences. Refer to the following link for locale strings: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes).
-
-Defaults to "en" if locale can't be retrieved (args.inputs.locale_raw will be nil in this case).
-
-### up
-
-Returns true if: the up arrow or w key is pressed or held on the keyboard; or if up is pressed or held on controller_one; or if the left_analog on controller_one is tilted upwards.
-
-### down
-
-Returns true if: the down arrow or s key is pressed or held on the keyboard; or if down is pressed or held on controller_one; or if the left_analog on controller_one is tilted downwards.
-
-### left
-
-Returns true if: the left arrow or a key is pressed or held on the keyboard; or if left is pressed or held on controller_one; or if the left_analog on controller_one is tilted to the left.
-
-### right
-
-Returns true if: the right arrow or d key is pressed or held on the keyboard; or if right is pressed or held on controller_one; or if the left_analog on controller_one is tilted to the right.
-
-### left_right
-
-Returns -1 (left), 0 (neutral), or +1 (right) depending on results of `args.inputs.left` and `args.inputs.right`.
-
-`args.state.player[:x] += args.inputs.left_right * args.state.speed`
-
-### up_down
-
-Returns -1 (down), 0 (neutral), or +1 (up) depending on results of `args.inputs.down` and `args.inputs.up`.
-
-`args.state.player[:y] += args.inputs.up_down * args.state.speed`
-
-### text
-
-Returns a string that represents the last key that was pressed on the keyboard.
 
 ## Mouse (args.inputs.mouse)
 
