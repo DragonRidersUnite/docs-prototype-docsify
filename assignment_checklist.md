@@ -30,11 +30,11 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	reset_sprites	|	runtime/reset_sprites.md	|	dcrawl	|	X	|		|
 |	show_console	|	runtime/show_console.md	|	dcrawl	|	X	|		|
 |	slowmo!	|	runtime/slowmo!.md	|	dcrawl	|	X	|		|
-|	version	|	runtime/version.md	|	dcrawl	|		|		|
-|	version_pro?	|	runtime/version_pro?.md	|		|		|		|
-|	warn_array_primitives!	|	runtime/warn_array_primitives!.md	|		|		|		|
-|	cancel_recording	|	runtime/cancel_recording.md	|		|		|		|
-|	start_recording	|	runtime/start_recording.md	|		|		|		|
+|	version	|	runtime/version.md	|	dcrawl	|	X	|		|
+|	version_pro?	|	runtime/version_pro?.md	|		|	X	|		|
+|	warn_array_primitives!	|	runtime/warn_array_primitives!.md	|		|	X	|		|
+|	cancel_recording	|	runtime/cancel_recording.md	|		|	X	|		|
+|	start_recording	|	runtime/start_recording.md	|		|	X	|		|
 |	start_replay	|	runtime/start_replay.md	|		|		|		|
 |	stop_recording	|	runtime/stop_recording.md	|		|		|		|
 |	stop_replay	|	runtime/stop_replay.md	|		|		|		|
