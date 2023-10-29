@@ -40,39 +40,39 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	stop_replay	|	runtime/stop_replay.md	|		|	X	|		|
 |	append_file	|	runtime/append_file.md	|	dcrawl	|	X	|		|
 |	append_file_root	|	runtime/append_file_root.md	|	dcrawl |	X	|		|
-|	delete_file	|	runtime/delete_file.md	|		|		|		|
-|	delete_file_if_exist	|	runtime/delete_file_if_exist.md	|		|		|		|
-|	get_base_dir	|	runtime/get_base_dir.md	|		|		|		|
-|	get_game_dir	|	runtime/get_game_dir.md	|		|		|		|
+|	delete_file	|	runtime/delete_file.md	|		|	X	|		|
+|	delete_file_if_exist	|	runtime/delete_file_if_exist.md	|		|	X	|		|
+|	get_base_dir	|	runtime/get_base_dir.md	|		|	X	|		|
+|	get_game_dir	|	runtime/get_game_dir.md	|		|	X	|		|
 |	get_game_dir_url	|	runtime/get_game_dir_url.md	|	dcrawl	|	X	|		|
-|	list_files	|	runtime/list_files.md	|		|		|		|
-|	read_file	|	runtime/read_file.md	|		|		|		|
-|	stat_file	|	runtime/stat_file.md	|		|		|		|
-|	write_file	|	runtime/write_file.md	|		|		|		|
-|	write_file_root	|	runtime/write_file_root.md	|		|		|		|
-|	get_pixels	|	runtime/get_pixels.md	|		|		|		|
-|	dlopen	|	runtime/dlopen.md	|		|		|		|
-|	parse_json	|	runtime/parse_json.md	|		|		|		|
-|	parse_json_file	|	runtime/parse_json_file.md	|		|		|		|
-|	parse_xml	|	runtime/parse_xml.md	|		|		|		|
-|	parse_xml_file	|	runtime/parse_xml_file.md	|		|		|		|
-|	cursor_shown?	|	runtime/cursor_shown?.md	|		|		|		|
-|	hide_cursor	|	runtime/hide_cursor.md	|		|		|		|
-|	set_cursor	|	runtime/set_cursor.md	|		|		|		|
-|	set_mouse_grab	|	runtime/set_mouse_grab.md	|		|		|		|
-|	set_system_cursor	|	runtime/set_system_cursor.md	|		|		|		|
-|	show_cursor	|	runtime/show_cursor.md	|		|		|		|
-|	http_get	|	runtime/http_get.md	|		|		|		|
-|	http_post	|	runtime/http_post.md	|		|		|		|
-|	http_post_body	|	runtime/http_post_body.md	|		|		|		|
-|	start_server!	|	runtime/start_server!.md	|		|		|		|
-|	exec	|	runtime/exec.md	|		|		|		|
-|	open_url	|	runtime/open_url.md	|		|		|		|
-|	platform_mappings	|	runtime/platform_mappings.md	|		|		|		|
-|	platform?	|	runtime/platform?.md	|		|		|		|
-|	system	|	runtime/system.md	|		|		|		|
-|	calcstringbox	|	runtime/calcstringbox.md	|		|		|		|
-|	set_window_fullscreen	|	runtime/set_window_fullscreen.md	|		|		|		|
-|	set_window_scale	|	runtime/set_window_scale.md	|		|		|		|
-|	window_fullscreen?	|	runtime/window_fullscreen?.md	|		|		|		|
+|	list_files	|	runtime/list_files.md	|		|	X	|		|
+|	read_file	|	runtime/read_file.md	|		|X		|		|
+|	stat_file	|	runtime/stat_file.md	|		|	X	|		|
+|	write_file	|	runtime/write_file.md	|		|	X	|		|
+|	write_file_root	|	runtime/write_file_root.md	|		|	X	|		|
+|	get_pixels	|	runtime/get_pixels.md	|		|	X	|		|
+|	dlopen	|	runtime/dlopen.md	|		|	X	|		|
+|	parse_json	|	runtime/parse_json.md	|		|	X	|		|
+|	parse_json_file	|	runtime/parse_json_file.md	|		|	X	|		|
+|	parse_xml	|	runtime/parse_xml.md	|		|	X	|		|
+|	parse_xml_file	|	runtime/parse_xml_file.md	|		|X		|		|
+|	cursor_shown?	|	runtime/cursor_shown?.md	|		|	X	|		|
+|	hide_cursor	|	runtime/hide_cursor.md	|		|		|X		|
+|	set_cursor	|	runtime/set_cursor.md	|		|	X	|		|
+|	set_mouse_grab	|	runtime/set_mouse_grab.md	|		|	X	|		|
+|	set_system_cursor	|	runtime/set_system_cursor.md	|		|	X	|		|
+|	show_cursor	|	runtime/show_cursor.md	|		|	X	|		|
+|	http_get	|	runtime/http_get.md	|		|	X	|		|
+|	http_post	|	runtime/http_post.md	|		|X		|		|
+|	http_post_body	|	runtime/http_post_body.md	|		|	X	|		|
+|	start_server!	|	runtime/start_server!.md	|		|	X	|		|
+|	exec	|	runtime/exec.md	|		|	X	|		|
+|	open_url	|	runtime/open_url.md	|		|	X	|		|
+|	platform_mappings	|	runtime/platform_mappings.md	|		|	X	|		|
+|	platform?	|	runtime/platform?.md	|		|	X	|		|
+|	system	|	runtime/system.md	|		|X		|		|
+|	calcstringbox	|	runtime/calcstringbox.md	|		|	X	|		|
+|	set_window_fullscreen	|	runtime/set_window_fullscreen.md	|		|	X	|		|
+|	set_window_scale	|	runtime/set_window_scale.md	|		|	X	|		|
+|	window_fullscreen?	|	runtime/window_fullscreen?.md	|		|	X	|		|
 
