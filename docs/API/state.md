@@ -37,7 +37,7 @@ def tick args
 end
 ```
 
-## new_entity_strict
+### new_entity_strict
 
 Creates a new Strict Entity. While Entities created via `args.state.new_entity` can have new properties added later on, Entities created using `args.state.new_entity_strict` must define all properties that are allowed during its initialization. Attempting to add new properties after initialization will result in an exception.
 
