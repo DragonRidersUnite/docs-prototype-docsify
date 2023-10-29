@@ -28,4 +28,4 @@ Returns a Hash for files that have been queued for reload, but haven't been proc
 
 ## Related Functions
 
-[production?](production.md), [reload_history](reload_history.md)
+[production?](production.md), [reload_history](reload_history.md), [reload_if_needed](reload_if_needed.md)
