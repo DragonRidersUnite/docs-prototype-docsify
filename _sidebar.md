@@ -15,3 +15,4 @@
   * [cvars](/docs/API/cvars.md)
   * [Ruby](/docs/API/ruby.md)
 * [FAQ](/docs/faq/faq_dr.md)
+  * [DragonRuby Philosophy](/docs/faq/dragonruby_philo.md)
