@@ -16,5 +16,6 @@
   * [Deploy to Itch.io](/docs/guides/deploy_itch.md)
   * [Deploy to Mobile](/docs/guides/deploy_mobile.md)
   * [Deploy to Steam](/docs/guides/deploy_steam.md)
+  * [DragonRuby Recipes](/docs/guides/recipes.md)
 * [FAQ](/docs/faq/faq_dr.md)
 * [DragonRuby Philosophy](/docs/faq/dragonruby_philo.md)
