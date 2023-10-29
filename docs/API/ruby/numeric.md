@@ -137,7 +137,7 @@ def tick args
 end
 ```
 
-elapsed?(\[offset_tick\])
+## elapsed?(\[offset_tick\])
 
 Returns true if `Numeric#elapsed_time` is greater than the number. An optional parameter can be passed into elapsed? which is added to the number before evaluating whether elapsed? is true.
 
