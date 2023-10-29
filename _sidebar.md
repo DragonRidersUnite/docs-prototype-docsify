@@ -4,6 +4,7 @@
   * [Outputs](/docs/API/outputs.md)
   * [State](/docs/API/state.md)
   * [Audio](/docs/API/audio.md)
+  * [Geometry](/docs/API/geometry.md)
   * [Easing](/docs/API/easing.md)
   * [Grid](/docs/API/grid.md)
   * [Layout](/docs/API/layout.md)
