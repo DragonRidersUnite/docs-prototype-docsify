@@ -153,8 +153,11 @@ def tick args
                                          w: 50,
                                          h: 50)
 end
+```
+
 You can represent a sprite using the attr_sprite helper method:
 
+```ruby
 class BlueSquare
   # invoke the helper function at the class level for
   # anything you want to represent as a sprite
