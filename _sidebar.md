@@ -1,5 +1,6 @@
 * Guides & Tutorials
   * [Getting Started](/docs/guides/getting-started.md)
+  * [New Project](/docs/guides/new_project.md)
 * API
   * [$gtk](/docs/API/runtime.md)
   * [Outputs](/docs/API/outputs.md)
