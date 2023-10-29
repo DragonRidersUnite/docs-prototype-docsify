@@ -16,4 +16,4 @@
   * [Deploy to Mobile](/docs/guides/deploy_mobile.md)
   * [Deploy to Steam](/docs/guides/deploy_steam.md)
 * [FAQ](/docs/faq/faq_dr.md)
-  * [DragonRuby Philosophy](/docs/faq/dragonruby_philo.md)
+* [DragonRuby Philosophy](/docs/faq/dragonruby_philo.md)
