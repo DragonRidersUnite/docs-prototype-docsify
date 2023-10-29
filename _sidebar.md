@@ -1,6 +1,7 @@
 * [Getting Started](/docs/guides/getting-started.md)
 * API
   * [$gtk](/docs/API/runtime.md)
+  * [Inputs](/docs/API/inputs.md)
   * [Outputs](/docs/API/outputs.md)
   * [State](/docs/API/state.md)
   * [Audio](/docs/API/audio.md)
