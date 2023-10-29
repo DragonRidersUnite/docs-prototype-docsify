@@ -1,82 +1,12 @@
 # Module Kernel
 
-The Kernel module is included by class Object, so its methods are available in every Ruby object.
+The Kernel module is included by class Object, so its methods are available in every Ruby object.  Kernel in the DragonRuby Runtime has patches for how `standard out` is handled and also contains a unit of time in games called a `tick`.
 
+## tick_count
 
-## Instance Methods
+Returns the current `tick` of the game. This value is reset if you call `$gtk.reset`.
 
-| Method | Parameters | Description |
-| --- | --- | --- |
-|Array |  |  |
-|Complex |  |  |
-|Float |  |  |
-|Hash |  |  |
-|Integer |  |  |
-|Rational |  |  |
-|String |  |  |
-|\_\_callee__ |  |  |
-|\_\_dir__ |  |  |
-|\_\_method__ |  |  |
-|` |  |  |
-|abort |  |  |
-|at_exit |  |  |
-|autoload |  |  |
-|autoload? |  |  |
-|binding |  |  |
-|block_given? |  |  |
-|callcc |  |  |
-|caller |  |  |
-|caller_locations |  |  |
-|catch |  |  |
-|chomp |  |  |
-|chop |  |  |
-|class |  |  |
-|clone |  |  |
-|eval |  |  |
-|exec |  |  |
-|exit |  |  |
-|exit! |  |  |
-|fail |  |  |
-|fork |  |  |
-|format |  |  |
-|frozen? |  |  |
-|gets |  |  |
-|global_variables |  |  |
-|gsub |  |  |
-|iterator? |  |  |
-|lambda |  |  |
-|load |  |  |
-|local_variables |  |  |
-|loop |  |  |
-|open |  |  |
-|p |  |  |
-|pp |  |  |
-|print |  |  |
-|printf |  |  |
-|proc |  |  |
-|putc |  |  |
-|puts |  |  |
-|raise |  |  |
-|rand |  |  |
-|readline |  |  |
-|readlines |  |  |
-|require |  |  |
-|require_relative |  |  |
-|select |  |  |
-|set_trace_func |  |  |
-|sleep |  |  |
-|spawn |  |  |
-|sprintf |  |  |
-|srand |  |  |
-|sub |  |  |
-|syscall |  |  |
-|system |  |  |
-|tap |  |  |
-|test |  |  |
-|then |  |  |
-|throw |  |  |
-|trace_var |  |  |
-|trap |  |  |
-|untrace_var |  |  |
-|warn |  |  |
-|yield_self |  |  |
+## global_tick_count
+
+Returns the current `tick` of the application from the point it was started. This value is **never** reset.
+
