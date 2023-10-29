@@ -371,7 +371,7 @@ def tick args
 end
 ```
 
-## Accessing files
+## Accessing Files
 
 DragonRuby uses a sandboxed filesystem which will automatically read from and write to a location appropriate for your platform so you don't have to worry about theses details in your code. You can just use gtk.read_file, gtk.write_file, and gtk.append_file with a relative path and the engine will take care of the rest.
 
