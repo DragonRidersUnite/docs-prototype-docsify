@@ -25,8 +25,8 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	reload_history_pending	|	runtime/reload_history_pending.md	|	dcrawl	|	X	|		|
 |	reload_if_needed	|	runtime/reload_if_needed.md	|	dcrawl	|	X	|		|
 |	reset	|	runtime/reset.md	|	dcrawl	|	X	|		|
-|	reset_next_tick	|	runtime/reset_next_tick.md	|	dcrawl	|		|		|
-|	reset_sprite	|	runtime/reset_sprite.md	|		|		|		|
+|	reset_next_tick	|	runtime/reset_next_tick.md	|	dcrawl	|	X	|		|
+|	reset_sprite	|	runtime/reset_sprite.md	|	dcrawl	|		|		|
 |	reset_sprites	|	runtime/reset_sprites.md	|		|		|		|
 |	show_console	|	runtime/show_console.md	|		|		|		|
 |	slowmo!	|	runtime/slowmo!.md	|		|		|		|
