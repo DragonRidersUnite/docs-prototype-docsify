@@ -28,7 +28,7 @@ end
 
 ## Mouse
 
-Represents the user's mouse. (args.inputs.mouse)
+Represents the user's mouse. Accessed using `args.inputs.mouse`.
 
 | Properties | Description |
 | --- | --- |
@@ -51,7 +51,7 @@ Represents the user's mouse. (args.inputs.mouse)
 
 ## Touch
 
-The following touch apis are available on touch devices (iOS, Android, Mobile Web, Surface).
+The following touch apis are available on touch devices (iOS, Android, Mobile Web, Surface). Touch properties are accessed directly from `args.inputs`.
 
 | Properties | Description |
 | --- | --- |
@@ -62,7 +62,7 @@ The following touch apis are available on touch devices (iOS, Android, Mobile We
 
 ## Controller
 
-Represents controllers (args.inputs.controller_(one-four)) connected to the usb ports. 
+Represents controllers connected to the usb ports. Accessed using `args.inputs.controller_one` through `args.inputs.controller_four`.
 
 | Properties | Description |
 | --- | --- |
@@ -89,7 +89,7 @@ Represents controllers (args.inputs.controller_(one-four)) connected to the usb 
 
 ## Keyboard
 
-Represents the user's keyboard. (args.inputs.keyboard) 
+Represents the user's keyboard. Accessed using `args.inputs.keyboard`.
 
 | Properties | Description |
 | --- | --- |
