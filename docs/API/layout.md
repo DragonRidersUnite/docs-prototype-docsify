@@ -73,7 +73,7 @@ Given a `row:`, `col:`, `w:`, `h:`, returns a Hash with properties `x`, `y`, `w`
 
 ## debug_primitives
 
-Function returns an array of primities that can be rendered to the screen to help you place items within the grid.
+Function returns an array of primitives that can be rendered to the screen to help you place items within the grid.
 
 **Example:**
 
