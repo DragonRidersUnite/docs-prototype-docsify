@@ -81,7 +81,7 @@ Represents controllers connected to the usb ports. Accessed using `args.inputs.c
 | directional_down | Returns true if down is pressed or held on the directional.|
 | directional_left | Returns true if left is pressed or held on the directional.|
 | directional_right | Returns true if right is pressed or held on the directional.|
-| ( a| b| x| y| l1| r1| l2| r2| l3| r3| start| select ) | Returns true if the specific button is pressed or held.|
+| ( a\| b\| x\| y\| l1\| r1\| l2\| r2\| l3\| r3\| start\| select ) | Returns true if the specific button is pressed or held.|
 |truthy_keys |Returns a collection of Symbols that represent all keys that are in the pressed or held state.|
 |key_down | Returns true if the specific button was pressed on this frame. `args.inputs.controller_(one-four).key_down.BUTTON` will only be true on the frame it was pressed.|
 | key_held | Returns true if the specific button is being held. `args.inputs.controller_(one-four).key_held.BUTTON` will be true for all frames after `key_down` (until released).|
