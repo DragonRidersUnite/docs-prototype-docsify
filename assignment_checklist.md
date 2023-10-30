@@ -57,7 +57,7 @@ on it.  Do not remove someone's name from the list unless you know they are no l
 |	parse_xml	|	runtime/parse_xml.md	|		|	X	|		|
 |	parse_xml_file	|	runtime/parse_xml_file.md	|		|X		|		|
 |	cursor_shown?	|	runtime/cursor_shown?.md	|		|	X	|		|
-|	hide_cursor	|	runtime/hide_cursor.md	|		|		|X		|
+|	hide_cursor	|	runtime/hide_cursor.md	|		|	X	|		|
 |	set_cursor	|	runtime/set_cursor.md	|		|	X	|		|
 |	set_mouse_grab	|	runtime/set_mouse_grab.md	|		|	X	|		|
 |	set_system_cursor	|	runtime/set_system_cursor.md	|		|	X	|		|
