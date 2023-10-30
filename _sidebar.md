@@ -9,7 +9,7 @@
   * [inputs](/docs/API/inputs.md)
   * [layout](/docs/API/layout.md)
   * [outputs](/docs/API/outputs.md)
-  * [pixel_arrays](/docs/API/pixel_arrays.md)
+  * [pixel_array](/docs/API/pixel_arrays.md)
   * [state](/docs/API/state.md)
   * [Ruby](/docs/API/ruby.md)
 * Guides & Tutorials
