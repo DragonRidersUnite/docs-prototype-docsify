@@ -1,4 +1,4 @@
-# args.pixel_arrays
+# args.pixel_array
 
 Pixel arrays allow you to dynamically create new sprites.  They are closely related to Render Targets but allow access to the individual pixels of your PixelArray.  A PixelArray has a `width`, `height` and an Array of `pixels` which contain hexadecimal color values in the **ABGR** format.
 
@@ -40,4 +40,4 @@ args.pixel_array(:my_pixel_array).pixels[(height - y) * width + x] = 0xFFFFFFFF
 
 Animation using pixel arrays: `./samples/07_advanced_rendering/06_pixel_arrays`
 
-Load a pixel array from a png: `./samples/07_advanced_rendering/06_pixel_arrays_from_file/`
+Load a pixel array from a png: `./samples/07_advanced_rendering/06_pixel_arrays_from_file`
