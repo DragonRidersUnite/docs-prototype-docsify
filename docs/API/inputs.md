@@ -41,7 +41,7 @@ Represents the user's mouse. Accessed using `args.inputs.mouse`.
 | button_right | Returns true if the right mouse button is down.|
 | button_bits  | Returns a bitmask for all buttons on the mouse: 1 for a button in the down state, 0 for a button in the up state.|
 | wheel | Represents the mouse wheel. Returns nil if no mouse wheel actions occurred. Otherwise `args.inputs.mouse.wheel` will return a Hash with `x`, and `y` (representing movement on each axis).|
-| click OR down, previous_click, up | The properties args.inputs.mouse.(click|down|previous_click|up) each return nil if the mouse button event didn't occur. And return an Entity that has an x, y properties along with helper functions to determine collision: inside_rect?, inside_circle. This value will be true if any of the mouse's buttons caused these events. To scope to a specific button use .button_left, .button_middle, .button_right, or .button_bits.|
+| click OR down, previous_click, up | The properties args.inputs.mouse.(click\|down\|previous_click\|up) each return nil if the mouse button event didn't occur. And return an Entity that has an x, y properties along with helper functions to determine collision: inside_rect?, inside_circle. This value will be true if any of the mouse's buttons caused these events. To scope to a specific button use .button_left, .button_middle, .button_right, or .button_bits.|
 
 | Methods | Arguments | Description |
 | --- | --- | --- |
