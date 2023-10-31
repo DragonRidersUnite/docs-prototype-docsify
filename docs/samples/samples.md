@@ -989,8 +989,8 @@ repl do
   puts "*** Original array."
   puts things_to_sort
 
-  puts "*** Simple sort using key."
-  # For a simple sort, you can use sort_by
+  puts "***  sort using key."
+  # For a  sort, you can use sort_by
   results = things_to_sort.sort_by do |hash|
     hash[:order]
   end
@@ -1089,7 +1089,7 @@ def tick args
   # render the current frame to the screen centered vertically and horizontally at 640, 620
   args.outputs.labels << { x: 640, y: 620, anchor_x: 0.5, anchor_y: 0.5, text: "frame: #{args.state.tick_count}" }
 
-  # Here are some examples of simple labels, with the minimum number of parameters
+  # Here are some examples of  labels, with the minimum number of parameters
   # Note that the default values for the other parameters are 0, except for Alpha which is 255 and Font Style which is the default font
   args.outputs.labels << { x: 5,          y: 720 - 5, text: "This is a label located at the top left." }
   args.outputs.labels << { x: 5,          y:      30, text: "This is a label located at the bottom left." }
@@ -3806,7 +3806,7 @@ def write_terrain_data args
 end
 ```
 
-## #Simple Aabb Collision With Map Editor - Data - terrain.txt
+### Simple Aabb Collision With Map Editor - Data - terrain.txt
 ```
 # ./samples/04_physics_and_collisions/01_simple_aabb_collision_with_map_editor/data/terrain.txt
 ```
