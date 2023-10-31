@@ -488,8 +488,10 @@ repl do
   puts '======'
   puts '===='
 end
+```
 
-Intermediate Ruby Primer - strings.txt link
+### Intermediate Ruby Primer - strings.txt 
+```ruby
 # ./samples/00_learn_ruby_optional/00_intermediate_ruby_primer/app/02_strings.txt
 # ====================================================================================
 #  Strings
@@ -1037,19 +1039,26 @@ end
 # Api documention for Array that is worth commiting to memory because arrays are so
 # awesome in Ruby: https://docs.ruby-lang.org/en/2.0.0/Array.html
 # ====================================================================================
+```
 
-Intermediate Ruby Primer - main.rb link
+### Intermediate Ruby Primer - main.rb
+```ruby
 # ./samples/00_learn_ruby_optional/00_intermediate_ruby_primer/app/main.rb
 def tick args
   args.outputs.labels << [640, 380, "Open repl.rb in the text editor of your choice and follow the document.", 0, 1]
 end
+```
 
-Intermediate Ruby Primer - repl.rb link
+### Intermediate Ruby Primer - repl.rb 
+```ruby
 # ./samples/00_learn_ruby_optional/00_intermediate_ruby_primer/app/repl.rb
 # Copy and paste the code inside of the txt files here.
+```
 
-Rendering Basics link
-Labels - main.rb link
+## Rendering Basics 
+
+### Labels - main.rb
+```ruby
 # ./samples/01_rendering_basics/01_labels/app/main.rb
 =begin
 
@@ -3575,8 +3584,10 @@ def tick_instructions args, text, y = 715
   args.outputs.debug << [640, y, text, 1, 1, 255, 255, 255].label
   args.outputs.debug << [640, y - 25, "(click to dismiss instructions)" , -2, 1, 255, 255, 255].label
 end
+```
 
-Simple Aabb Collision - main.rb link
+### Simple Aabb Collision - main.rb
+```ruby
 # ./samples/04_physics_and_collisions/01_simple_aabb_collision/app/main.rb
 def tick args
   # define terrain of 32x32 sized squares
@@ -8076,8 +8087,10 @@ puts "running tests"
 $gtk.reset 100
 $gtk.log_level = :off
 $gtk.tests.start
+```
 
-Collision With Object Removal - vector2d.rb link
+### Collision With Object Removal - vector2d.rb
+```ruby
 # ./samples/04_physics_and_collisions/10_collision_with_object_removal/app/vector2d.rb
 
 class Vector2d
@@ -10902,11 +10915,16 @@ def render args
   render_ui args
   render_sources args
 end
+```
 
-Audio Mixer - server_ip_address.txt link
+### Audio Mixer - server_ip_address.txt
+```ruby
 # ./samples/07_advanced_audio/01_audio_mixer/app/server_ip_address.txt
 192.168.1.65
-Sound Synthesis - main.rb link
+```
+
+### Sound Synthesis - main.rb
+```ruby
 # ./samples/07_advanced_audio/02_sound_synthesis/app/main.rb
 begin # region: top level tick methods
   def tick args
@@ -11591,8 +11609,10 @@ def render_instructions args
 
   args.outputs.primitives << [0, 55.from_top, 1280, 30, :pixel, 0, 255, 0, 0, 0].sprite
 end
+```
 
-Rotating Label - main.rb link
+### Rotating Label - main.rb 
+```ruby
 # ./samples/07_advanced_rendering/00_rotating_label/app/main.rb
 def tick args
   # set the render target width and height to match the label
@@ -11785,8 +11805,10 @@ def tick_origin_bottom_left args
   args.outputs[:scene].sprites << { x: 640 - 50, y: 360 - 50, w: 100, h: 100, path: 'sprites/square/blue.png' }
   args.outputs.sprites << { x: 0, y: 0, w: 1280, h: 720, path: :scene }
 end
+```
 
-Render Targets Thick Lines - main.rb link
+### Render Targets Thick Lines - main.rb 
+```ruby
 # ./samples/07_advanced_rendering/02_render_targets_thick_lines/app/main.rb
 # Sample app shows how you can use render targets to create arbitrary shapes like a thicker line
 def tick args
@@ -14468,8 +14490,10 @@ def tick args
       source_y3: 0 }
   ]
 end
+```
 
-Camera Space World Space Simple - main.rb link
+### Camera Space World Space Simple - main.rb 
+```ruby
 # ./samples/07_advanced_rendering/16_camera_space_world_space_simple/app/main.rb
 def tick args
   # camera must have the following properties (x, y, and scale)
@@ -18864,8 +18888,10 @@ def test_require args, assert
   $gtk.exec 'rm ./mygame/lib/unit_testing_lib.rb'
   assert.ok!
 end
+```
 
-Unit Tests - serialize_deserialize_tests.rb link
+### Unit Tests - serialize_deserialize_tests.rb
+```ruby
 # ./samples/10_advanced_debugging/03_unit_tests/serialize_deserialize_tests.rb
 def assert_hash_strings! assert, string_1, string_2
   Kernel.eval("$assert_hash_string_1 = #{string_1}")
@@ -19154,8 +19180,10 @@ S
 end
 ```
 
-Http link
-Retrieve Images - main.rb link
+## Http 
+
+### Retrieve Images - main.rb
+```ruby
 # ./samples/11_http/01_retrieve_images/app/main.rb
 $gtk.register_cvar 'app.warn_seconds', "seconds to wait before starting", :uint, 11
 
@@ -19212,8 +19240,10 @@ def tick args
     end
   end
 end
+```
 
-In Game Web Server Http Get - main.rb link
+### In Game Web Server Http Get - main.rb 
+```ruby
 # ./samples/11_http/02_in_game_web_server_http_get/app/main.rb
 def tick args
   args.state.port ||= 3000
@@ -19247,8 +19277,10 @@ def tick args
     end
   }
 end
+```
 
-In Game Web Server Http Post - main.rb link
+### In Game Web Server Http Post - main.rb 
+```ruby
 # ./samples/11_http/03_in_game_web_server_http_post/app/main.rb
 def tick args
   # defaults
@@ -19322,9 +19354,12 @@ def draw_label args, row, col, header, text
     { x: label_pos.x, y: label_pos.y - (i * 15), text: l, size_enum: -2 }
   end
 end
+```
 
-C Extensions link
-Basics - main.rb link
+## C Extensions 
+
+### Basics - main.rb 
+```ruby
 # ./samples/12_c_extensions/01_basics/app/main.rb
 $gtk.ffi_misc.gtk_dlopen("ext")
 include FFI::CExt
@@ -19335,9 +19370,11 @@ def tick args
   args.outputs.labels  << [640, 420, "mouse.y = #{args.mouse.y.to_i}", 5, 1]
   args.outputs.labels  << [640, 380, "square(mouse.y) = #{square(args.mouse.y.to_i)}", 5, 1]
 end
+```
 
 
-Intermediate - main.rb link
+### Intermediate - main.rb 
+```ruby
 # ./samples/12_c_extensions/02_intermediate/app/main.rb
 $gtk.ffi_misc.gtk_dlopen("ext")
 include FFI::RE
@@ -19358,8 +19395,10 @@ end
 def tick args
   args.outputs.labels  << [640, 500, split_words("hello, dragonriders!").join(' '), 5, 1]
 end
+```
 
-Native Pixel Arrays - main.rb link
+### Native Pixel Arrays - main.rb 
+```ruby
 # ./samples/12_c_extensions/03_native_pixel_arrays/app/main.rb
 $gtk.ffi_misc.gtk_dlopen("ext")
 include FFI::CExt
@@ -19382,9 +19421,10 @@ def tick args
 
   args.outputs.primitives << args.gtk.current_framerate_primitives
 end
+```
 
-
-Handcrafted Extension - main.rb link
+### Handcrafted Extension - main.rb 
+```ruby
 # ./samples/12_c_extensions/04_handcrafted_extension/app/main.rb
 $gtk.ffi_misc.gtk_dlopen("ext")
 include FFI::CExt
@@ -19393,8 +19433,10 @@ puts Adder.new.add_all(1, 2, 3, [4, 5, 6.0])
 
 def tick args
 end
+```
 
-Handcrafted Extension - license.txt link
+### Handcrafted Extension - license.txt 
+```ruby
 # ./samples/12_c_extensions/04_handcrafted_extension/license.txt
 Copyright 2022 DragonRuby LLC
 
@@ -19452,8 +19494,10 @@ def reset_with count: count
 end
 
 $gtk.reset
+```
 
-Handcrafted Extension Advanced - license.txt link
+### Handcrafted Extension Advanced - license.txt
+```ruby
 # ./samples/12_c_extensions/04_handcrafted_extension_advanced/license.txt
 Copyright 2022 DragonRuby LLC
 
@@ -19464,8 +19508,10 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
 
-Handcrafted Extension Advanced - Metadata - cvars.txt link
+### Handcrafted Extension Advanced - Metadata - cvars.txt 
+```ruby
 # ./samples/12_c_extensions/04_handcrafted_extension_advanced/metadata/cvars.txt
 log.filter_subsystems=HTTPServer
 
@@ -19482,8 +19528,10 @@ log.filter_subsystems=HTTPServer
 # work if this value is true and you must provide a means to exit the
 # game and wire it up to $gtk.request_quit
 # renderer.borderless=true
+```
 
-Ios main.rb link
+### iOS main.rb 
+```ruby
 # ./samples/12_c_extensions/05_ios_c_extensions/app/main.rb
 # NOTE: This is assumed to be executed with mygame as the root directory
 #       you'll need to copy this code over there to try it out.
@@ -19556,11 +19604,16 @@ def tick args
     $gtk.console.show
   end
 end
+```
 
-Ios Metadata - cvars.txt link
+### iOS Metadata - cvars.txt 
+```
 # ./samples/12_c_extensions/05_ios_c_extensions/metadata/cvars.txt
+```
 
-Ios Metadata - ios_metadata.txt link
+
+### iOS Metadata - ios_metadata.txt
+```ruby
 # ./samples/12_c_extensions/05_ios_c_extensions/metadata/ios_metadata.txt
 teamid=TEAMID
 appid=APPID
@@ -19568,9 +19621,12 @@ appname=ICON NAME
 version=1.0
 devcert=NAME OF DEV CERT
 prodcert=NAME OF PROD CERT
+```
 
-Path Finding Algorithms link
-Breadth First Search - main.rb link
+## Path Finding Algorithms 
+
+### Breadth First Search - main.rb 
+```ruby
 # ./samples/13_path_finding_algorithms/01_breadth_first_search/app/main.rb
 # Contributors outside of DragonRuby who also hold Copyright:
 # - Sujay Vadlakonda: https://github.com/sujayvadlakonda
@@ -20273,8 +20329,10 @@ end
 def reset
   $breadth_first_search = nil
 end
+```
 
-Detailed Breadth First Search - main.rb link
+### Detailed Breadth First Search - main.rb 
+```ruby
 # ./samples/13_path_finding_algorithms/02_detailed_breadth_first_search/app/main.rb
 # Contributors outside of DragonRuby who also hold Copyright:
 # - Sujay Vadlakonda: https://github.com/sujayvadlakonda
@@ -20919,8 +20977,10 @@ end
 def reset
   $detailed_breadth_first_search = nil
 end
+```
 
-Breadcrumbs - main.rb link
+### Breadcrumbs - main.rb 
+```ruby
 # ./samples/13_path_finding_algorithms/03_breadcrumbs/app/main.rb
 # Contributors outside of DragonRuby who also hold Copyright:
 # - Sujay Vadlakonda: https://github.com/sujayvadlakonda
@@ -21459,8 +21519,10 @@ end
  #      # outputs.solids << [early_exit_scale_up(visited_cell), red, alpha]
  #    end
  #  end
+```
 
-Early Exit - main.rb link
+### Early Exit - main.rb 
+```ruby
 # ./samples/13_path_finding_algorithms/04_early_exit/app/main.rb
 # Contributors outside of DragonRuby who also hold Copyright:
 # - Sujay Vadlakonda: https://github.com/sujayvadlakonda
@@ -22096,8 +22158,10 @@ end
 def reset
   $early_exit_breadth_first_search = nil
 end
+```
 
-Dijkstra - main.rb link
+### Dijkstra - main.rb 
+```ruby
 # ./samples/13_path_finding_algorithms/05_dijkstra/app/main.rb
 # Contributors outside of DragonRuby who also hold Copyright:
 # - Sujay Vadlakonda: https://github.com/sujayvadlakonda
@@ -22923,8 +22987,10 @@ end
 def reset
   $movement_costs = nil
 end
+```
 
-Heuristic - main.rb link
+### Heuristic - main.rb 
+```ruby
 # ./samples/13_path_finding_algorithms/06_heuristic/app/main.rb
 # Contributors outside of DragonRuby who also hold Copyright:
 # - Sujay Vadlakonda: https://github.com/sujayvadlakonda
@@ -23880,8 +23946,10 @@ end
 def reset
   $heuristic = nil
 end
+```
 
-Heuristic With Walls - main.rb link
+### Heuristic With Walls - main.rb 
+```ruby
 # ./samples/13_path_finding_algorithms/07_heuristic_with_walls/app/main.rb
 # Contributors outside of DragonRuby who also hold Copyright:
 # - Sujay Vadlakonda: https://github.com/sujayvadlakonda
@@ -24870,8 +24938,10 @@ end
 def reset
   $heuristic_with_walls = nil
 end
+```
 
-A Star - main.rb link
+### A Star - main.rb 
+```ruby
 # ./samples/13_path_finding_algorithms/08_a_star/app/main.rb
 # Contributors outside of DragonRuby who also hold Copyright:
 # - Sujay Vadlakonda: https://github.com/sujayvadlakonda
@@ -25879,8 +25949,10 @@ end
 def reset
   $a_star_algorithm = nil
 end
+```
 
-Tower Defense - main.rb link
+### Tower Defense - main.rb 
+```ruby
 # ./samples/13_path_finding_algorithms/09_tower_defense/app/main.rb
 # Contributors outside of DragonRuby who also hold Copyright:
 # - Sujay Vadlakonda: https://github.com/sujayvadlakonda
@@ -26185,9 +26257,12 @@ end
 def a_star_color
   [0, 0, 255]
 end
+```
 
-Vr link
-Skybox - main.rb link
+## VR
+
+### Skybox - main.rb
+```ruby
 # ./samples/14_vr/01_skybox/app/main.rb
 require 'app/tick.rb'
 
@@ -26195,8 +26270,10 @@ def tick args
   args.gtk.start_server! port: 9001, enable_in_prod: true
   tick_game args
 end
+```
 
-Skybox - tick.rb link
+### Skybox - tick.rb 
+```ruby
 # ./samples/14_vr/01_skybox/app/tick.rb
 def skybox args, x, y, z, size
   sprite = { a: 80, path: 'sprites/box.png' }
@@ -26353,8 +26430,10 @@ def render_guides args
 end
 
 $gtk.reset
+```
 
-Top Down Rpg - main.rb link
+### Top Down Rpg - main.rb 
+```ruby
 # ./samples/14_vr/02_top_down_rpg/app/main.rb
 require 'app/tick.rb'
 
@@ -26362,8 +26441,10 @@ def tick args
   args.gtk.start_server! port: 9001, enable_in_prod: true
   tick_game args
 end
+```
 
-Top Down Rpg - tick.rb link
+### Top Down Rpg - tick.rb 
+```ruby
 # ./samples/14_vr/02_top_down_rpg/app/tick.rb
 class Game
   attr_gtk
@@ -26473,8 +26554,10 @@ def tick_game args
 end
 
 $gtk.reset
+```
 
-Space Invaders - main.rb link
+### Space Invaders - main.rb 
+```ruby
 # ./samples/14_vr/03_space_invaders/app/main.rb
 require 'app/tick.rb'
 
@@ -26482,8 +26565,10 @@ def tick args
   args.gtk.start_server! port: 9001, enable_in_prod: true
   tick_game args
 end
+```
 
-Space Invaders - tick.rb link
+### Space Invaders - tick.rb 
+```ruby
 # ./samples/14_vr/03_space_invaders/app/tick.rb
 class Game
   attr_gtk
@@ -26540,8 +26625,10 @@ def tick_game args
 end
 
 $gtk.reset
+```
 
-Let There Be Light - main.rb link
+### Let There Be Light - main.rb 
+```ruby
 # ./samples/14_vr/04_let_there_be_light/app/main.rb
 require 'app/tick.rb'
 
@@ -26549,8 +26636,10 @@ def tick args
   args.gtk.start_server! port: 9001, enable_in_prod: true
   tick_game args
 end
+```
 
-Let There Be Light - tick.rb link
+### Let There Be Light - tick.rb 
+```ruby
 # ./samples/14_vr/04_let_there_be_light/app/tick.rb
 class Game
   attr_gtk
@@ -26656,8 +26745,10 @@ def tick_game args
 end
 
 $gtk.reset
+```
 
-Draw A Cube - main.rb link
+### Draw A Cube - main.rb 
+```ruby
 # ./samples/14_vr/05_draw_a_cube/app/main.rb
 require 'app/tick.rb'
 
@@ -26665,8 +26756,10 @@ def tick args
   args.gtk.start_server! port: 9001, enable_in_prod: true
   tick_game args
 end
+```
 
-Draw A Cube - tick.rb link
+### Draw A Cube - tick.rb
+```ruby
 # ./samples/14_vr/05_draw_a_cube/app/tick.rb
 def cube args, x, y, z, size
   sprite = { w: size, h: size, path: 'sprites/square/blue.png', a: 80 }
@@ -26692,8 +26785,10 @@ def tick_game args
 
   cube args, args.state.x, args.state.y, 0, 100
 end
+```
 
-Draw A Cube With Triangles - main.rb link
+### Draw A Cube With Triangles - main.rb 
+```ruby
 # ./samples/14_vr/05_draw_a_cube_with_triangles/app/main.rb
 require 'app/tick.rb'
 
@@ -26701,8 +26796,10 @@ def tick args
   args.gtk.start_server! port: 9001, enable_in_prod: true
   tick_game args
 end
+```
 
-Draw A Cube With Triangles - tick.rb link
+### Draw A Cube With Triangles - tick.rb
+```ruby
 # ./samples/14_vr/05_draw_a_cube_with_triangles/app/tick.rb
 include MatrixFunctions
 
@@ -26863,8 +26960,10 @@ def rotate_x angle_d
         0, sin_t,  cos_t, 0,
         0,     0,      0, 1
 end
+```
 
-Gimbal Lock - main.rb link
+### Gimbal Lock - main.rb
+```ruby
 # ./samples/14_vr/05_gimbal_lock/app/main.rb
 require 'app/tick.rb'
 
@@ -26874,8 +26973,10 @@ def tick args
   $game.args = args
   $game.tick
 end
+```
 
-Gimbal Lock - tick.rb link
+### Gimbal Lock - tick.rb 
+```ruby
 # ./samples/14_vr/05_gimbal_lock/app/tick.rb
 class Game
   attr_gtk
@@ -26916,8 +27017,10 @@ class Game
     }
   end
 end
+```
 
-Citadels - main.rb link
+### Citadels - main.rb 
+```ruby
 # ./samples/14_vr/06_citadels/app/main.rb
 require 'app/tick.rb'
 
@@ -26927,8 +27030,10 @@ def tick args
   $game.args = args
   $game.tick
 end
+```
 
-Citadels - tick.rb link
+### Citadels - tick.rb 
+```ruby
 # ./samples/14_vr/06_citadels/app/tick.rb
 class Game
   attr_gtk
@@ -27033,14 +27138,17 @@ def tick_game args
 end
 
 $gtk.reset
+```
 
-Flappy credits.txt link
+### Flappy credits.txt 
+```
 # ./samples/14_vr/07_flappy_vr/CREDITS.txt
 code: Amir Rajan, https://twitter.com/amirrajan
 graphics and audio: Nick Culbertson, https://twitter.com/MobyPixel
+```
 
-
-Flappy main.rb link
+### Flappy main.rb 
+```ruby
 # ./samples/14_vr/07_flappy_vr/app/main.rb
 require 'app/tick.rb'
 
@@ -27048,8 +27156,10 @@ def tick args
   args.gtk.start_server! port: 9001, enable_in_prod: true
   tick_game args
 end
+```
 
-Flappy tick.rb link
+### Flappy tick.rb 
+```ruby
 # ./samples/14_vr/07_flappy_vr/app/tick.rb
 class FlappyDragon
   attr_accessor :grid, :inputs, :state, :outputs
@@ -27526,8 +27636,10 @@ def tick_game args
 end
 
 $gtk.reset
+```
 
-Cubeworld main.rb link
+### Cubeworld main.rb 
+```ruby
 # ./samples/14_vr/08_cubeworld_vr/app/main.rb
 require 'app/tick.rb'
 
@@ -27537,8 +27649,10 @@ def tick args
   $game.args = args
   $game.tick
 end
+```
 
-Cubeworld tick.rb link
+### Cubeworld tick.rb 
+```ruby
 # ./samples/14_vr/08_cubeworld_vr/app/tick.rb
 class Game
   include MatrixFunctions
@@ -27753,9 +27867,12 @@ class Game
     }
   end
 end
+```
 
-Genre 3d link
-3d Cube - main.rb link
+## Genre 3d 
+
+### 3d Cube - main.rb
+```ruby
 # ./samples/99_genre_3d/01_3d_cube/app/main.rb
 STARTX             = 0.0
 STARTY             = 0.0
@@ -27807,8 +27924,10 @@ def tick args
 end
 
 $gtk.reset
+```
 
-Wireframe - main.rb link
+### Wireframe - main.rb 
+```ruby
 # ./samples/99_genre_3d/02_wireframe/app/main.rb
 def tick args
   args.state.model   ||= Object3D.new('data/shuttle.off')
@@ -27960,10 +28079,16 @@ class Vertex
     @z * (10 / (5 - @y)) * 170 + 360
   end
 end
-Wireframe - Data - what-is-this.txt link
+```
+
+### Wireframe - Data - what-is-this.txt 
+```
 # ./samples/99_genre_3d/02_wireframe/data/what-is-this.txt
 https://en.wikipedia.org/wiki/OFF_(file_format)
-Yaw Pitch Roll - main.rb link
+```
+
+### Yaw Pitch Roll - main.rb
+```ruby
 # ./samples/99_genre_3d/03_yaw_pitch_roll/app/main.rb
 class Game
   include MatrixFunctions
@@ -28300,8 +28425,10 @@ def set_angles x, y, z
 end
 
 $gtk.reset
+```
 
-Ray Caster - main.rb link
+### Ray Caster - main.rb 
+```ruby
 # ./samples/99_genre_3d/04_ray_caster/app/main.rb
 # https://github.com/BrennerLittle/DragonRubyRaycast
 # https://github.com/3DSage/OpenGL-Raycaster_v1
@@ -28527,8 +28654,10 @@ def render args
     ra = (ra - 1) % 360
   end
 end
+```
 
-Ray Caster Advanced - main.rb link
+### Ray Caster Advanced - main.rb 
+```ruby
 # ./samples/99_genre_3d/04_ray_caster_advanced/app/main.rb
 =begin
 
@@ -28948,9 +29077,12 @@ def render args
   # Draw all the sprites we collected in the array to the render target
   args.outputs[:screen].sprites << sprites_to_draw
 end
+```
 
-Genre Arcade link
-Bullet Hell - main.rb link
+## Genre Arcade 
+
+### Bullet Hell - main.rb
+```ruby
 # ./samples/99_genre_arcade/bullet_hell/app/main.rb
 def tick args
   args.state.base_columns   ||= 10.times.map { |n| 50 * n + 1280 / 2 - 5 * 50 + 5 }
@@ -29141,8 +29273,10 @@ def update_enemy_positions args
     end
   end
 end
+```
 
-Dueling Starships - main.rb link
+### Dueling Starships - main.rb 
+```ruby
 # ./samples/99_genre_arcade/dueling_starships/app/main.rb
 class DuelingSpaceships
   attr_accessor :state, :inputs, :outputs, :grid
@@ -29509,14 +29643,17 @@ def tick args
   $dueling_spaceship.grid    = args.grid
   $dueling_spaceship.tick
 end
+```
 
-arcade/flappy dragon/credits.txt link
+### arcade/flappy dragon/credits.txt
+```
 # ./samples/99_genre_arcade/flappy_dragon/CREDITS.txt
 code: Amir Rajan, https://twitter.com/amirrajan
 graphics and audio: Nick Culbertson, https://twitter.com/MobyPixel
+```
 
-
-arcade/flappy dragon/main.rb link
+### arcade/flappy dragon/main.rb 
+```ruby
 # ./samples/99_genre_arcade/flappy_dragon/app/main.rb
 class FlappyDragon
   attr_accessor :grid, :inputs, :state, :outputs
@@ -29873,8 +30010,10 @@ def tick args
   $flappy_dragon.outputs = args.outputs
   $flappy_dragon.tick
 end
+```
 
-Pong - main.rb link
+### Pong - main.rb 
+```ruby
 # ./samples/99_genre_arcade/pong/app/main.rb
 def tick args
   defaults args
@@ -30035,8 +30174,10 @@ begin :assets
     [x, y - h / 2, w, h]
   end
 end
+```
 
-Snakemoji - main.rb link
+### Snakemoji - main.rb 
+```ruby
 # ./samples/99_genre_arcade/snakemoji/app/main.rb
 # coding: utf-8
 ################################
@@ -30203,8 +30344,10 @@ def defaults 🎮
   #Spawns Food randomly
   spawn_🍎(🎮) unless 🎮.🍎
 end
+```
 
-Solar System - main.rb link
+### Solar System - main.rb 
+```ruby
 # ./samples/99_genre_arcade/solar_system/app/main.rb
 # Focused tutorial video: https://s3.amazonaws.com/s3.dragonruby.org/dragonruby-nddnug-workshop.mp4
 # Workshop/Presentation which provides motivation for creating a game engine: https://www.youtube.com/watch?v=S3CFce1arC8
@@ -30317,8 +30460,10 @@ end
 def r
   $gtk.reset
 end
+```
 
-Sound Golf - main.rb link
+### Sound Golf - main.rb 
+```ruby
 # ./samples/99_genre_arcade/sound_golf/app/main.rb
 =begin
 
@@ -30510,8 +30655,10 @@ def tick_instructions args, text, y = 715
   args.outputs.debug << [640, y, text, 1, 1, 255, 255, 255].label
   args.outputs.debug << [640, y - 25, "(click to dismiss instructions)" , -2, 1, 255, 255, 255].label
 end
+```
 
-Squares - main.rb link
+### Squares - main.rb 
+```ruby
 # ./samples/99_genre_arcade/squares/app/main.rb
 # game concept from: https://youtu.be/Tz-AinJGDIM
 
@@ -30984,8 +31131,10 @@ def tick args
 end
 
 $gtk.reset
+```
 
-Twinstick - main.rb link
+### Twinstick - main.rb 
+```ruby
 # ./samples/99_genre_arcade/twinstick/app/main.rb
 def tick args
   args.state.player         ||= {x: 600, y: 320, w: 80, h: 80, path: 'sprites/circle-white.png', vx: 0, vy: 0, health: 10, cooldown: 0, score: 0}
@@ -31138,8 +31287,12 @@ def shoot_directional_vector args
   end
   [dx, dy]
 end
-Genre Board Game link
-Fifteen Puzzle - main.rb link
+```
+
+## Genre Board Game 
+
+### Fifteen Puzzle - main.rb 
+```ruby
 # ./samples/99_genre_board_game/01_fifteen_puzzle/app/main.rb
 class Game
   attr_gtk
@@ -31414,9 +31567,12 @@ def tick args
 end
 
 $gtk.reset
+```
 
-Genre Boss Battle link
-Boss Battle Game Jam - main.rb link
+## Genre Boss Battle 
+
+### Boss Battle Game Jam - main.rb 
+```ruby
 # ./samples/99_genre_boss_battle/boss_battle_game_jam/app/main.rb
 class Game
   attr_gtk
@@ -31867,9 +32023,12 @@ def tick args
   $game.args = args
   $game.tick
 end
+```
 
-Genre Crafting link
-Craft Game Starting Point - main.rb link
+## Genre Crafting 
+
+### Craft Game Starting Point - main.rb
+```ruby
 # ./samples/99_genre_crafting/craft_game_starting_point/app/main.rb
 # ==================================================
 # A NOTE TO JAM CRAFT PARTICIPANTS:
@@ -32294,8 +32453,10 @@ end
 # So every time you save main.rb, the game will be reset.
 # Comment out the line below if you don't want this to happen.
 $gtk.reset
+```
 
-Farming Game Starting Point - main.rb link
+### Farming Game Starting Point - main.rb 
+```ruby
 # ./samples/99_genre_crafting/farming_game_starting_point/app/main.rb
 def tick args
   args.state.tile_size     = 80
@@ -32381,8 +32542,10 @@ def move_player args, *vector
         .shift_rect(vector.x * args.state.player_speed, # if we don't multiply by speed, then
                     vector.y * args.state.player_speed) # the box will move extremely slow
 end
+```
 
-Farming Game Starting Point - repl.rb link
+### Farming Game Starting Point - repl.rb 
+```ruby
 # ./samples/99_genre_crafting/farming_game_starting_point/app/repl.rb
 # ===============================================================
 # Welcome to repl.rb
@@ -32691,8 +32854,10 @@ xrepl do
     puts "(#{width}, #{height}, #{hypotenuse}) = #{area}"
   end
 end
+```
 
-Farming Game Starting Point - tests.rb link
+### Farming Game Starting Point - tests.rb 
+```ruby
 # ./samples/99_genre_crafting/farming_game_starting_point/app/tests.rb
 # For advanced users:
 # You can put some quick verification tests here, any method
@@ -32723,9 +32888,12 @@ puts "running tests"
 $gtk.reset 100
 $gtk.log_level = :off
 $gtk.tests.start
+```
 
-Genre Dev Tools link
-Add Buttons To Console - main.rb link
+## Genre Dev Tools 
+
+### Add Buttons To Console - main.rb
+```ruby
 # ./samples/99_genre_dev_tools/add_buttons_to_console/app/main.rb
 # You can customize the buttons that show up in the Console.
 class GTK::Console::Menu
@@ -32785,8 +32953,10 @@ def tick args
                           "Open the DragonRuby Console to see the custom menu items.",
                           0, 1]
 end
+```
 
-Animation Creator Starting Point - main.rb link
+### Animation Creator Starting Point - main.rb
+```ruby
 # ./samples/99_genre_dev_tools/animation_creator_starting_point/app/main.rb
 class OneBitLowrezPaint
   attr_gtk
@@ -33237,8 +33407,10 @@ def tick args
 end
 
 # $gtk.reset
+```
 
-Frame By Frame - main.rb link
+### Frame By Frame - main.rb 
+```ruby
 # ./samples/99_genre_dev_tools/frame_by_frame/app/main.rb
 def tick args
   # create a tick count variant called clock
@@ -33324,8 +33496,10 @@ def calc_game args
 end
 
 $gtk.reset
+```
 
-Tile Editor Starting Point - main.rb link
+### Tile Editor Starting Point - main.rb 
+```ruby
 # ./samples/99_genre_dev_tools/tile_editor_starting_point/app/main.rb
 =begin
 
@@ -33718,9 +33892,12 @@ def tick_instructions args, text, y = 715
   args.outputs.debug << [640, y, text, 1, 1, 255, 255, 255].label
   args.outputs.debug << [640, y - 25, "(click to dismiss instructions)" , -2, 1, 255, 255, 255].label
 end
+```
 
-Genre Dungeon Crawl link
-Classics Jam - main.rb link
+## Genre Dungeon Crawl 
+
+### Classics Jam - main.rb
+```ruby
 # ./samples/99_genre_dungeon_crawl/classics_jam/app/main.rb
 class Game
   attr_gtk
@@ -33935,9 +34112,12 @@ end
 
 $gtk.reset
 $game = nil
+```
 
-Genre Fighting link
-Special Move Inputs - main.rb link
+## Genre Fighting 
+
+### Special Move Inputs - main.rb 
+```ruby
 # ./samples/99_genre_fighting/01_special_move_inputs/app/main.rb
 def tick args
   #tick_instructions args, "Use LEFT and RIGHT arrow keys to move and SPACE to jump."
@@ -34236,9 +34416,12 @@ def tick_instructions args, text, y = 715
   args.outputs.debug << [640, y, text, 1, 1, 255, 255, 255].label
   args.outputs.debug << [640, y - 25, "(click to dismiss instructions)" , -2, 1, 255, 255, 255].label
 end
+```
 
-Genre Lowrez link
-Nokia 3310 - main.rb link
+## Genre Lowrez 
+
+### Nokia 3310 - main.rb 
+```ruby
 # ./samples/99_genre_lowrez/nokia_3310/app/main.rb
 require 'app/nokia.rb'
 
@@ -34865,8 +35048,10 @@ def snake_demo args
 end
 
 $gtk.reset
+```
 
-Nokia 3310 - nokia.rb link
+### Nokia 3310 - nokia.rb 
+```ruby
 # ./samples/99_genre_lowrez/nokia_3310/app/nokia.rb
 # Emulation of a 64x64 canvas. Don't change this file unless you know what you're doing :-)
 # Head over to main.rb and study the code there.
@@ -35127,8 +35312,10 @@ module GTK
     end
   end
 end
+```
 
-Resolution 64x64 - lowrez.rb link
+### Resolution 64x64 - lowrez.rb 
+```ruby
 # ./samples/99_genre_lowrez/resolution_64x64/app/lowrez.rb
 # Emulation of a 64x64 canvas. Don't change this file unless you know what you're doing :-)
 # Head over to main.rb and study the code there.
@@ -35300,8 +35487,10 @@ module GTK
     end
   end
 end
+```
 
-Resolution 64x64 - main.rb link
+### Resolution 64x64 - main.rb
+```ruby
 # ./samples/99_genre_lowrez/resolution_64x64/app/main.rb
 require 'app/lowrez.rb'
 
@@ -35916,9 +36105,12 @@ def render_debug args
 end
 
 $gtk.reset
+```
 
-Genre Mario link
-Jumping - main.rb link
+## Genre Mario 
+
+### Jumping - main.rb
+```ruby
 # ./samples/99_genre_mario/01_jumping/app/main.rb
 def tick args
   defaults args
@@ -35998,8 +36190,10 @@ def calc args
     args.state.player.action = :standing
   end
 end
+```
 
-Jumping And Collisions - main.rb link
+### Jumping And Collisions - main.rb 
+```ruby
 # ./samples/99_genre_mario/02_jumping_and_collisions/app/main.rb
 class Game
   attr_gtk
@@ -36283,9 +36477,12 @@ def tick args
 end
 
 $gtk.reset
+```
 
-Genre Platformer link
-Clepto Frog - main.rb link
+## Genre Platformer 
+
+### Clepto Frog - main.rb
+```ruby
 # ./samples/99_genre_platformer/clepto_frog/app/main.rb
 class CleptoFrog
   attr_gtk
@@ -36889,8 +37086,10 @@ def tick args
 end
 
 # $gtk.reset
+```
 
-Clepto Frog - Data - mugs.txt link
+### Clepto Frog - Data - mugs.txt 
+```
 # ./samples/99_genre_platformer/clepto_frog/data/mugs.txt
 64,64,32,32
 928,1952,32,32
@@ -36921,8 +37120,10 @@ Clepto Frog - Data - mugs.txt link
 3424,608,32,32
 2656,704,32,32
 2208,224,32,32
+```
 
-Clepto Frog - Data - walls.txt link
+### Clepto Frog - Data - walls.txt 
+```
 # ./samples/99_genre_platformer/clepto_frog/data/walls.txt
 0,0,32,5664
 0,5664,10016,32
@@ -36998,14 +37199,18 @@ Clepto Frog - Data - walls.txt link
 2336,1184,128,128
 640,224,128,128
 7264,4352,128,128
+```
 
-Gorillas Basic - credits.txt link
+### Gorillas Basic - credits.txt 
+```
 # ./samples/99_genre_platformer/gorillas_basic/CREDITS.txt
 code: Amir Rajan, https://twitter.com/amirrajan
 graphics: Nick Culbertson, https://twitter.com/MobyPixel
+```
 
 
-Gorillas Basic - main.rb link
+### Gorillas Basic - main.rb 
+```ruby
 # ./samples/99_genre_platformer/gorillas_basic/app/main.rb
 class YouSoBasicGorillas
   attr_accessor :outputs, :grid, :state, :inputs
@@ -37380,15 +37585,19 @@ def tick args
   $you_so_basic_gorillas.inputs  = args.inputs
   $you_so_basic_gorillas.tick
 end
+```
 
-Gorillas Basic - tests.rb link
+### Gorillas Basic - tests.rb 
+```ruby
 # ./samples/99_genre_platformer/gorillas_basic/app/tests.rb
 $gtk.reset 100
 $gtk.supress_framerate_warning = true
 $gtk.require 'app/tests/building_generation_tests.rb'
 $gtk.tests.start
+```
 
-Gorillas Basic - Tests - building_generation_tests.rb link
+### Gorillas Basic - Tests - building_generation_tests.rb 
+```ruby
 # ./samples/99_genre_platformer/gorillas_basic/app/tests/building_generation_tests.rb
 def test_solids args, assert
   game = YouSoBasicGorillas.new
@@ -37405,8 +37614,10 @@ def test_solids args, assert
   static_solids = args.outputs.static_solids.length
   assert.true! static_solids == the_only_background.+(number_of_building_components), "not all parts of the buildings and background were rendered"
 end
+```
 
-Shadows - main.rb link
+### Shadows - main.rb
+```ruby
 # ./samples/99_genre_platformer/shadows/app/main.rb
 class Game
   attr_gtk
@@ -38029,8 +38240,10 @@ end
 def reset args
   $game = Game.new
 end
+```
 
-Shadows - Metadata - ios_metadata.txt link
+### Shadows - Metadata - ios_metadata.txt 
+```
 # ./samples/99_genre_platformer/shadows/metadata/ios_metadata.txt
 teamid=L7H57V9CRD
 appid=com.scratchworkdevelopment.sandbox
@@ -38038,8 +38251,10 @@ appname=DragonRuby
 version=1.0
 devcert=iPhone Developer: Amirali Rajan (P2B6225J87)
 prodcert=
+```
 
-The Little Probe - main.rb link
+### The Little Probe - main.rb
+```ruby
 # ./samples/99_genre_platformer/the_little_probe/app/main.rb
 class FallingCircle
   attr_gtk
@@ -38931,8 +39146,10 @@ end
 def reset
   $game = nil
 end
+```
 
-The Little Probe - Data - level.txt link
+### The Little Probe - Data - level.txt 
+```
 # ./samples/99_genre_platformer/the_little_probe/data/level.txt
 640,8840,1180,8840
 -60,10220,0,9960
@@ -40415,7 +40632,10 @@ The Little Probe - Data - level.txt link
 1600,11320,1910,11280
 1910,11280,2200,11180
 923.0029599285435,11398.99893503157,1264.002959928544,11351.99893503157
-The Little Probe - Data - level_lava.txt link
+```
+
+### The Little Probe - Data - level_lava.txt 
+```
 # ./samples/99_genre_platformer/the_little_probe/data/level_lava.txt
 100,10740,500,10780
 500,10780,960,10760
@@ -40652,8 +40872,12 @@ The Little Probe - Data - level_lava.txt link
 1480,11280,1840,11230
 2200,11130,2360,11090
 1840,11230,2200,11130
-Genre Rpg Narrative link
-Choose Your Own Adventure - decision.rb link
+```
+
+## Genre Rpg Narrative
+
+### Choose Your Own Adventure - decision.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/choose_your_own_adventure/app/decision.rb
 # Hey there! Welcome to Four Decisions. Here is how you
 # create your decision tree. Remove =being and =end from the text to
@@ -40692,8 +40916,10 @@ def game
     }
   }
 end
+```
 
-Choose Your Own Adventure - main.rb link
+### Choose Your Own Adventure - main.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/choose_your_own_adventure/app/main.rb
 =begin
 
@@ -40827,8 +41053,10 @@ end
 
 # Resets the game.
 $gtk.reset
+```
 
-Return Of Serenity - lowrez_simulator.rb link
+### Return Of Serenity - lowrez_simulator.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/lowrez_simulator.rb
 ###################################################################################
 # YOU CAN PLAY AROUND WITH THE CODE BELOW, BUT USE CAUTION AS THIS IS WHAT EMULATES
@@ -40922,8 +41150,10 @@ def render_gridlines_if_needed args
     args.static_lines.clear
   end
 end
+```
 
-Return Of Serenity - main.rb link
+### Return Of Serenity - main.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/main.rb
 require 'app/require.rb'
 
@@ -41398,8 +41628,10 @@ end
 def player_xs args, x, y
   [x, y, 1, 4, 'sprites/player-zoomed-out.png', 0, (global_alpha_percentage args)]
 end
+```
 
-Return Of Serenity - require.rb link
+### Return Of Serenity - require.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/require.rb
 require 'app/lowrez_simulator.rb'
 require 'app/storyline_day_one.rb'
@@ -41412,8 +41644,10 @@ require 'app/storyline_anka.rb'
 require 'app/storyline_final_message.rb'
 require 'app/storyline_final_decision.rb'
 require 'app/storyline.rb'
+```
 
-Return Of Serenity - storyline.rb link
+### Return Of Serenity - storyline.rb
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline.rb
 def hotspot_top
   [4, 61, 56, 3]
@@ -41561,8 +41795,10 @@ def reload_current_scene
   end
   $gtk.console.close
 end
+```
 
-Return Of Serenity - storyline_anka.rb link
+### Return Of Serenity - storyline_anka.rb
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline_anka.rb
 def anka_inside_room args
   {
@@ -41691,8 +41927,10 @@ def replied_to_anka_back_home args
     }
   end
 end
+```
 
-Return Of Serenity - storyline_blinking_light.rb link
+### Return Of Serenity - storyline_blinking_light.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline_blinking_light.rb
 def the_blinking_light args
   {
@@ -41769,8 +42007,10 @@ def blinking_light_inside_mainframe args
     ]
   }
 end
+```
 
-Return Of Serenity - storyline_day_one.rb link
+### Return Of Serenity - storyline_day_one.rb
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline_day_one.rb
 def day_one_beginning args
   {
@@ -41978,8 +42218,10 @@ def explaining_the_special_power_inside_computer args
     ]
   }
 end
+```
 
-Return Of Serenity - storyline_final_decision.rb link
+### Return Of Serenity - storyline_final_decision.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline_final_decision.rb
 def final_decision_side_of_home args
   {
@@ -42117,8 +42359,10 @@ def final_decision_ship_status_shared args
                            "Sasha's--- Chamber--: UNDER-- THREAT-- OF-- TERMINATION. WHAT?! NO!"),
   ]
 end
+```
 
-Return Of Serenity - storyline_final_message.rb link
+### Return Of Serenity - storyline_final_message.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline_final_message.rb
 def final_message_sad args
   {
@@ -42336,8 +42580,10 @@ def final_message_summary args
     }
   end
 end
+```
 
-Return Of Serenity - storyline_serenity_alive.rb link
+### Return Of Serenity - storyline_serenity_alive.rb
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline_serenity_alive.rb
 def serenity_alive_side_of_home args
   {
@@ -42558,8 +42804,10 @@ def serenity_alive_current_message args
     "LOL! Thanks for the laugh. I needed that. This- is Sasha. The Serenity--- crew-- is out of hibernation---- and ready-- for Earth reentry--. But, it seems like we are having-- trouble-- with our Navigation---- systems. Can you help me out- babe?".quote
   end
 end
+```
 
-Return Of Serenity - storyline_serenity_bio.rb link
+### Return Of Serenity - storyline_serenity_bio.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline_serenity_bio.rb
 def serenity_bio_infront_of_home args
   {
@@ -42712,8 +42960,10 @@ def bad_dream_last_reply args
     return "Buffer--: #{serenity_alive_sugarcoated_reply.quote}"
   end
 end
+```
 
-Return Of Serenity - storyline_serenity_introduction.rb link
+### Return Of Serenity - storyline_serenity_introduction.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline_serenity_introduction.rb
 # decision_graph "Message from Sasha",
 #                "I should reply.",
@@ -42810,8 +43060,10 @@ def replied_to_introduction_side_of_home args
     ],
   }
 end
+```
 
-Return Of Serenity - storyline_speed_of_light.rb link
+### Return Of Serenity - storyline_speed_of_light.rb 
+```ruby
 # ./samples/99_genre_rpg_narrative/return_of_serenity/app/storyline_speed_of_light.rb
 def speed_of_light_front_of_home args
   {
@@ -42917,9 +43169,12 @@ def speed_of_light_end_of_day args
     ]
   }
 end
+```
 
-Genre Rpg Roguelike link
-Roguelike Starting Point - constants.rb link
+## Genre Rpg Roguelike 
+
+### Roguelike Starting Point - constants.rb 
+```ruby
 # ./samples/99_genre_rpg_roguelike/01_roguelike_starting_point/app/constants.rb
 SHOW_LEGEND = true
 SOURCE_TILE_SIZE = 16
@@ -42929,8 +43184,10 @@ TILE_R = 0
 TILE_G = 0
 TILE_B = 0
 TILE_A = 255
+```
 
-Roguelike Starting Point - legend.rb link
+### Roguelike Starting Point - legend.rb 
+```ruby
 # ./samples/99_genre_rpg_roguelike/01_roguelike_starting_point/app/legend.rb
 def tick_legend args
   return unless SHOW_LEGEND
@@ -42997,8 +43254,10 @@ def tick_legend args
     ]
   end
 end
+```
 
-Roguelike Starting Point - main.rb link
+### Roguelike Starting Point - main.rb 
+```ruby
 # ./samples/99_genre_rpg_roguelike/01_roguelike_starting_point/app/main.rb
 require 'app/constants.rb'
 require 'app/sprite_lookup.rb'
@@ -43097,8 +43356,10 @@ def tile_in_game x, y, tile_key
        $gtk.args.state.grid.padding + y * DESTINATION_TILE_SIZE,
        tile_key)
 end
+```
 
-Roguelike Starting Point - sprite_lookup.rb link
+### Roguelike Starting Point - sprite_lookup.rb 
+```ruby
 # ./samples/99_genre_rpg_roguelike/01_roguelike_starting_point/app/sprite_lookup.rb
 def sprite_lookup
   {
@@ -43224,8 +43485,10 @@ def tile_extended x, y, w, h, r, g, b, a, tile_row_column_or_key
 end
 
 $gtk.args.state.reserved.sprite_lookup = sprite_lookup
+```
 
-Roguelike Line Of Sight - main.rb link
+### Roguelike Line Of Sight - main.rb 
+```ruby
 # ./samples/99_genre_rpg_roguelike/02_roguelike_line_of_sight/app/main.rb
 =begin
 
@@ -43666,9 +43929,12 @@ def tick args
   $game.grid    = args.grid
   $game.tick
 end
+```
 
-Genre Rpg Tactical link
-Hexagonal Grid - main.rb link
+## Genre Rpg Tactical 
+
+### Hexagonal Grid - main.rb 
+```ruby
 # ./samples/99_genre_rpg_tactical/hexagonal_grid/app/main.rb
 class HexagonTileGame
   attr_gtk
@@ -43738,8 +44004,10 @@ def tick args
 end
 
 $gtk.reset
+```
 
-Isometric Grid - main.rb link
+### Isometric Grid - main.rb 
+```ruby
 # ./samples/99_genre_rpg_tactical/isometric_grid/app/main.rb
 class Isometric
     attr_accessor :grid, :inputs, :state, :outputs
@@ -44003,9 +44271,12 @@ def tick args
     $isometric.outputs = args.outputs
     $isometric.tick
 end
+```
 
-Genre Rpg Topdown link
-Topdown Casino - main.rb link
+## Genre Rpg Topdown 
+
+### Topdown Casino - main.rb 
+```ruby
 # ./samples/99_genre_rpg_topdown/topdown_casino/app/main.rb
 $gtk.reset
 
@@ -44147,8 +44418,10 @@ def tick args
     args.state.game.args = args
     args.state.game.tick
 end
+```
 
-Topdown Starting Point - main.rb link
+### Topdown Starting Point - main.rb
+```ruby
 # ./samples/99_genre_rpg_topdown/topdown_starting_point/app/main.rb
 =begin
  APIs listing that haven't been encountered in previous sample apps:
@@ -44272,9 +44545,12 @@ def move_player args, vector_x, vector_y
   args.state.player.x = next_x
   args.state.player.y = next_y
 end
+```
 
-Genre Rpg Turn Based link
-Turn Based Battle - main.rb link
+## Genre Rpg Turn Based 
+
+### Turn Based Battle - main.rb 
+```ruby
 # ./samples/99_genre_rpg_turn_based/turn_based_battle/app/main.rb
 def tick args
   args.state.phase ||= :selecting_top_level_action
@@ -44444,9 +44720,12 @@ def render_hero_statuses args
 end
 
 $gtk.reset
+```
 
-Genre Simulation link
-Sand main.rb link
+## Genre Simulation 
+
+### Sand main.rb 
+```ruby
 # ./samples/99_genre_simulation/sand_simulation/app/main.rb
 class Elements
   def initialize size
@@ -44571,9 +44850,12 @@ end
 
 $gtk.reset
 @elements = nil
+```
 
-Genre Twenty Second Games link
-Twenty Second Starting Point - main.rb link
+## Genre Twenty Second Games
+
+### Twenty Second Starting Point - main.rb 
+```ruby
 # ./samples/99_genre_twenty_second_games/twenty_second_starting_point/app/main.rb
 # full documenation is at http://docs.dragonruby.org
 # be sure to come to the discord if you hit any snags: http://discord.dragonruby.org
