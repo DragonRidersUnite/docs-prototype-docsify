@@ -1,15 +1,22 @@
 # Command-Line Tools
 
-## dragonruby
+## dragonruby \[folder location\]
 
+This tool is the heart of DragonRuby.  It is the Virtual Machine that executes your DragonRuby code.  By default, it doesn't need any options passed to it as long as it was installed from the downloaded ZIP file and the game you want to execute is contained in the `mygames` folder.
+
+<br>
 
 ## dragonruby-publish \[options\] game_directory
+
+This is tool has several options that allow you to package your game quickly for all supported platforms.  See the Deployment guides for instructions on how to publish to some of the more intricate platforms.
 
 | Option | Required? | Description |
 |---|---|---|
 | --package| N | |
 | --package-with-remote-hotload | N | |
 | game_directory | Y | |
+
+<br>
 
 ## dragonruby-bind \[options\] input_file
 
