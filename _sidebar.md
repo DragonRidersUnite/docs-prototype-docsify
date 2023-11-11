@@ -1,4 +1,6 @@
 * [Getting Started](/docs/guides/getting-started.md)
+
+
 * API
   * [$gtk](/docs/API/runtime.md)
   * [audio](/docs/API/audio.md)
@@ -12,12 +14,17 @@
   * [pixel_array](/docs/API/pixel_arrays.md)
   * [state](/docs/API/state.md)
   * [Ruby](/docs/API/ruby.md)
+
+* [Tools](/docs/tools.md)
+
 * Guides & Tutorials
   * [DR Projects & Github](/docs/guides/new_project.md)
   * [Deploy to Itch.io](/docs/guides/deploy_itch.md)
   * [Deploy to Mobile](/docs/guides/deploy_mobile.md)
   * [Deploy to Steam](/docs/guides/deploy_steam.md)
   * [DragonRuby Recipes](/docs/guides/recipes.md)
+
+
 * [Samples](/docs/samples/samples.md)
 * [FAQ](/docs/faq/faq_dr.md)
 * [DragonRuby Philosophy](/docs/faq/dragonruby_philo.md)
