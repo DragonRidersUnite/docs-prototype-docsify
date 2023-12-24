@@ -1,6 +1,6 @@
 # args.layout
 
-Layout provides apis for placing primitives on a virtual grid that's within the "safe area" across all platforms. This virtual grid is useful for rendering static controls (buttons, menu items, configuration screens, etc).
+Layout provides APIs for placing primitives on a virtual grid that's within the "safe area" across all platforms. This virtual grid is useful for rendering static controls (buttons, menu items, configuration screens, etc).
 
 For reference implementations, take a look at the following sample apps:
 
@@ -67,10 +67,6 @@ def tick args
 end
 ```
 
-## rect(row, col, w, h)
-
-Given a `row:`, `col:`, `w:`, `h:`, returns a Hash with properties `x`, `y`, `w`, `h`, and `center` (which contains a Hash with `x`, `y`). The virtual grid is 12 rows by 24 columns (or 24 rows by 12 columns in portrait mode).
-
 ## debug_primitives
 
 Function returns an array of primitives that can be rendered to the screen to help you place items within the grid.
@@ -82,3 +78,9 @@ def tick args
   args.outputs.primitives << args.layout.debug_primitives
 end
 ```
+
+## rect(row, col, w, h)
+
+Given a `row:`, `col:`, `w:`, `h:`, returns a Hash with properties `x`, `y`, `w`, `h`, and `center` (which contains a Hash with `x`, `y`). The virtual grid is 12 rows by 24 columns (or 24 rows by 12 columns in portrait mode).
+
+
