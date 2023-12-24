@@ -4,6 +4,22 @@
 
 When you assign a hash to an audio output, a `:length` key will be added to the hash on the following tick. This will tell you the duration of the audio file in seconds (float).
 
+
+## volume
+
+You can globally control the volume for all audio using `args.audio.volume`. Example:
+
+```ruby
+def tick args
+  if args.inputs.down
+    args.audio.volume -= 0.01
+  elsif args.inputs.up
+    args.audio.volume += 0.01
+  end
+end
+```
+
+
 ## One-Time Sounds
 
 Here's how to play audio one-time (does not loop).
