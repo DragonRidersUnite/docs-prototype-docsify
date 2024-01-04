@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/DragonRidersUnite/docs-prototype-docsify#readme",
   "dependencies": {
-    "docsify-cli": "^4.4.4"
+    "docsify-cli": "^4.4.2"
   }
 }

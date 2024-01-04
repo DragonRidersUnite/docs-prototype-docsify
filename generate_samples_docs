@@ -1,0 +1,86 @@
+#!/bin/env ruby
+# generate samples md's from DR-contrib repo
+
+require "pathname"
+require "fileutils"
+
+contrib_repo_path = ARGV.first
+raise "#{contrib_repo_path} does not exist" unless Dir.exist? contrib_repo_path
+
+GENERATED_SAMPLES_DIR = "docs/samples"
+
+items = Dir[contrib_repo_path + "/samples/**/*.rb"].map do |file|
+  code = File.read file
+  relative_file_path = file.gsub(Pathname.new(contrib_repo_path).join("samples").to_s, "")
+  breadcrumbs = Pathname.new(relative_file_path).each_filename.to_a
+  breadcrumbs.delete("app")
+  filename = breadcrumbs.last
+  contents = "
+
+  ```ruby
+  # #{relative_file_path}
+
+  #{code}
+  ```
+  "
+
+  output_dir = Pathname.new(GENERATED_SAMPLES_DIR).join(*(breadcrumbs[0..-2]))
+  output_file = filename.gsub(".rb", ".md")
+  {link: output_dir.join(output_file), breadcrumbs: breadcrumbs, output_dir: output_dir, output_file: output_file, title: filename, contents: contents}
+end
+
+# write each .rb file to their corresponding .md preserving the directory structure
+items.each do |sample|
+  link = sample[:link]
+  output_dir = sample[:output_dir]
+  contents = sample[:contents]
+
+  FileUtils.mkdir_p output_dir
+  File.write(link, contents)
+end
+
+# generate the sidebar menu
+
+## convert the array to a nested hash for each element
+tree = Hash.new { |h, k| h[k] = Hash.new(&h.default_proc) }
+items.each do |sample|
+  breadcrumbs = sample[:breadcrumbs]
+  tree.dig(*breadcrumbs)[:sample] = sample
+end
+
+# helper function for traversing the hash tree
+def dfs(tree, indentation, &block)
+  links = tree.keys.select { |k| k.end_with? ".rb" } # is a leaf, needs a link
+
+  # print all links
+  links.each do |k|
+    sample = tree.dig k, :sample
+    block.call sample, indentation
+  end
+
+  nodes = tree.except(*links)
+
+  nodes.each do |k, v|
+    block.call k, indentation
+    dfs(v, indentation + "  ", &block)
+  end
+end
+
+# replacing samples section in _sidebar.md
+
+samples_sidebar = "* Samples\n"
+
+dfs(tree, "  ") do |item, level|
+  samples_sidebar << if item.is_a?(Hash) && item[:link] # is a sample file, draw a link
+    "#{level}* [#{item[:title]}](/#{item[:link]})\n"
+  else # is a sub item, draw  the name
+    "#{level}* #{item}\n"
+  end
+end
+
+sidebar = File.read("_sidebar.md")
+sidebar.gsub!(/\* Samples.*/m, "") # all lines after "* Samples"
+sidebar << samples_sidebar
+
+File.write("_sidebar.md", sidebar)
+puts sidebar
