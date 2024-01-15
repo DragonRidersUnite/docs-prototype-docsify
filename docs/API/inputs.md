@@ -136,14 +136,25 @@ The following properties represent keys on the keyboard and are available on `ar
 * pipe
 * underscore
 * a - z
-* shift
-* control
-* alt
-* meta
-* left
-* right
-* up
-* down
+* w_scancode (key location for w in WASD layout across regions)
+* a_scancode (key location for a in WASD layout across regions)
+* s_scancode (key location for s in WASD layout across regions)
+* d_scancode (key location for d in WASD layout across regions)
+* shift_left
+* shift_right
+* control, ctrl
+* contro_left, ctrl_left
+* contro_right, ctrl_right
+* alt, option
+* alt_left, option_left
+* alt_right, option_right
+* meta, command
+* meta_left, command_left
+* meta_right, command_right
+* left_arrow, left
+* right_arrow, right
+* up_arrow, up
+* down_arrow, down
 * pageup
 * pagedown
 * char
@@ -161,11 +172,11 @@ The following properties represent keys on the keyboard and are available on `ar
 * question_mark
 * section_sign
 * ordinal_indicator
-* raw_key
+* raw_key (unique numeric identifier for key)
 * left_right
 * up_down
 * directional_vector
-* truthy_keys
+* truthy_keys (array of Symbols)
 
 ### keys
 Returns a Hash with all keys on the keyboard in their respective state. The Hash contains the following keys
